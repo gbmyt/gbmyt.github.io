@@ -60,6 +60,14 @@ a {
 .header > p {
   font-size: 0.8rem;
   color: $lightPink;
+
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.3rem;
+    width: 1.4rem;
+    padding-bottom: 0.25rem;
+  }
 }
 
 .logo {
@@ -99,6 +107,8 @@ a.featured,
   border: 2px solid white;
 
   &.featured {
+    display: flex;
+    justify-content: center;
     position: relative;
     font-weight: bold;
     background-color: $white;
@@ -119,6 +129,19 @@ a.featured,
       height: calc(100% - 2px);
 
       border: 2px solid $darkBlue;
+    }
+  }
+
+  span {
+    &.featured__text {
+      padding-top: 2.25px;
+    }
+
+    &.arrow {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+      font-size: 1.5rem;
+      line-height: 0.75;
     }
   }
 }

@@ -60,6 +60,14 @@ a:hover {
   color: #f6f0c4;
 }
 
+.header > p span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.3rem;
+  width: 1.4rem;
+  padding-bottom: 0.25rem;
+}
+
 .logo {
   width: 7.5rem;
 }
@@ -107,6 +115,12 @@ a.featured,
 
 a.featured.featured,
 .content > a.featured {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   font-weight: bold;
   background-color: #ffffff;
@@ -130,5 +144,18 @@ a.featured.featured:before,
   width: calc(100% - 2px);
   height: calc(100% - 2px);
   border: 2px solid #060042;
+}
+
+a.featured span.featured__text,
+.content > a span.featured__text {
+  padding-top: 2.25px;
+}
+
+a.featured span.arrow,
+.content > a span.arrow {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 1.5rem;
+  line-height: 0.75;
 }
 /*# sourceMappingURL=style.css.map */
