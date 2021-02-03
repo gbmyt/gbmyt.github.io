@@ -19,7 +19,7 @@ body {
     color-stop(108%, $lightPink)
   );
   background-image: linear-gradient($darkPink 2%, $lightPink 108%);
-  color: #ffffff;
+  color: $white;
   min-height: 100vh;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -34,6 +34,12 @@ h2 {
 
 a {
   max-width: 25rem;
+  transition: all 250ms ease-in-out;
+
+  &:hover {
+    opacity: 70%;
+    transform: scale(1.03);
+  }
 }
 
 .header {
@@ -83,19 +89,19 @@ a.featured,
   padding: 0.95rem;
 
   font-size: 0.9rem;
-  color: #ffffff;
+  color: $white;
   text-decoration: none;
   border: 2px solid white;
 
   &.featured {
     position: relative;
     font-weight: bold;
-    background-color: #ffffff;
+    background-color: $white;
     color: $darkBlue;
     transition: color 200ms ease-in-out;
 
     &:hover {
-      background-color: #ffffff;
+      background-color: $white;
       opacity: 70%;
     }
 

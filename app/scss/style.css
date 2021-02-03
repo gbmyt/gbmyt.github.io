@@ -30,6 +30,14 @@ h2 {
 
 a {
   max-width: 25rem;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+a:hover {
+  opacity: 70%;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .header {
