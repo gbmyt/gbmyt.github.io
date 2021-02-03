@@ -12,9 +12,9 @@ html {
 }
 
 body {
-  background-color: #060042;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(2%, #060042), color-stop(108%, #20a39e));
-  background-image: linear-gradient(#060042 2%, #20a39e 108%);
+  background-color: #darkpink;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(2%, #861657), color-stop(108%, #f6f0c4));
+  background-image: linear-gradient(#861657 2%, #f6f0c4 108%);
   color: #ffffff;
   min-height: 100vh;
   text-align: center;
@@ -26,6 +26,29 @@ h2 {
   font-size: 1rem;
   font-weight: lighter;
   letter-spacing: 0.08rem;
+}
+
+.header {
+  margin: 2.75rem auto;
+}
+
+.header > p {
+  font-size: 0.8rem;
+  color: #f6f0c4;
+}
+
+img {
+  width: 5rem;
+  border-radius: 60%;
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+img:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 .logo {
@@ -79,8 +102,7 @@ a,
 
 a:hover,
 .channels > a:hover {
-  background-color: #060042;
-  opacity: 100%;
+  opacity: 60%;
 }
 
 .channels {
@@ -96,7 +118,7 @@ a:hover,
           flex: 1;
   margin: 0.5rem;
   padding: 0.3125rem 0.625rem;
-  background-color: #060042;
+  background-color: #darkpink;
   opacity: 70%;
 }
 /*# sourceMappingURL=style.css.map */
