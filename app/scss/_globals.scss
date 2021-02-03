@@ -38,7 +38,7 @@ h2 {
 
 a {
   max-width: 25rem;
-  transition: all 250ms ease-in-out;
+  transition: opacity transform 250ms ease-in-out;
 
   &:hover {
     opacity: 70%;

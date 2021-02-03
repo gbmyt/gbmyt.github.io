@@ -34,8 +34,8 @@ h2 {
 
 a {
   max-width: 25rem;
-  -webkit-transition: all 250ms ease-in-out;
-  transition: all 250ms ease-in-out;
+  -webkit-transition: opacity transform 250ms ease-in-out;
+  transition: opacity transform 250ms ease-in-out;
 }
 
 a:hover {
