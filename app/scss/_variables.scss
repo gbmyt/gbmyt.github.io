@@ -1,6 +1,13 @@
 // Colors
-
-$darkPink: #861657;
-$lightPink: #f6f0c4;
-$darkBlue: #060042;
+$darkTeal: rgba(0, 128, 128, 0.2);
+$lightTeal: rgba(112, 128, 144, 0.2);
+$reallyDarkTeal: rgba(0, 128, 128, 0.6);
+$evenDarkerTeal: rgba(112, 128, 144, 1);
 $white: #ffffff;
+$lightPink: lightpink;
+
+// Font Sizes
+$font-sm: 0.875rem; // 14px
+$font-med: 1.125rem; // 18px
+$font-lg: 1.25rem; // 20px
+$font-xlg: 1.5rem; // 24px

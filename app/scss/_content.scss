@@ -1,0 +1,13 @@
+.content-section {
+  &__item {
+    margin: 0 auto;
+    width: 80%;
+    // max-width: 85%;
+    box-shadow: 0.25rem 0.25rem 1rem silver;
+    border-radius: 0.75rem;
+
+    padding: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3.5rem;
+  }
+}

@@ -1,105 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carnaluna</title>
     <link
+      href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
     />
-    <link rel="stylesheet" href="/app/scss/style.css" />
+    <link rel="stylesheet" href="/app/scss/styles.css" />
   </head>
 
   <body>
-    <!-- Logo -->
-    <!-- <h2>-- Add a Logo Here --</h2> -->
-    <div class="header">
-      <img class="header__img" src="/img/profile.png" alt="profile-image" />
-      <p>@casseopeian</p>
-    </div>
+    <section class="header-section">
+      <header class="header pall flex flex-jc-sb flex-ai-c">
+        <h2 class="header__text flex-child">Carnaluna</h2>
+        <img
+          class="header__img flex-child"
+          src="./images/profile.png"
+          alt="profile-image"
+        />
 
-    <div class="social">
-      <a
-        class="social__icon"
-        href="https://www.upwork.com/freelancers/~019e02afa7da01490c"
-        target="_blank"
-      >
-        <?xml version="1.0" ?><svg
-          id="Layer_1"
-          height="26.45"
-          ,
-          width="26.45"
-          ,
-          fill="#FFFFFF"
-          ,
-          style="enable-background: new 0 0 56.7 56.7"
-          version="1.1"
-          viewBox="0 0 56.7 56.7"
-          xml:space="preserve"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-        >
-          <g>
-            <path
-              d="M38.8,24.6c-2.8,0-3.7,2.7-3.9,4.3v0.1l-0.4,1.5c1.2,1,2.7,1.7,4.2,1.7c2,0,3.8-1.7,3.9-3.9C42.6,26.3,40.9,24.6,38.8,24.6   z"
-            />
-            <path
-              d="M28.9,3.7C15.2,3.7,4.1,14.8,4.1,28.5c0,13.7,11.1,24.8,24.8,24.8c13.7,0,24.8-11.1,24.8-24.8C53.7,14.8,42.6,3.7,28.9,3.7   z M38.8,36.1c-2,0-3.7-0.6-5.2-1.5l-1.7,8H28l2.4-11c-1-1.4-2-3-2.7-4.5v1.7c0,4.1-3.3,7.4-7.3,7.4c-4,0-7.3-3.3-7.3-7.4v-10h3.8   v10c0,2,1.6,3.6,3.6,3.6c2,0,3.6-1.6,3.6-3.6v-10h3.8c0.8,2.5,2.1,5.5,3.8,8.2c1-3.8,3.8-6.1,7.3-6.1c4.1,0,7.5,3.4,7.5,7.5   C46.3,32.7,42.9,36.1,38.8,36.1z"
-            />
-          </g>
-        </svg>
-      </a>
-      <a
-        class="social__icon"
-        href="https://www.linkedin.com/in/gabriela-t-a9bb12185/"
-        target="_blank"
-        ><img src="/img/SVGs/LinkedIn.svg" alt="LinkedIn"
-      /></a>
-      <a
-        class="social__icon"
-        href="https://www.instagram.com/casseopeian/"
-        target="_blank"
-        ><img src="/img/SVGs/Instagram.svg" alt="Instagram"
-      /></a>
-      <a
-        class="social__icon"
-        href="https://www.facebook.com/gabriela.taylor.904750/"
-        target="_blank"
-        ><img src="/img/SVGs/Facebook.svg" alt="Facebook"
-      /></a>
-      <a
-        class="social__icon"
-        href="https://github.com/carnaluna"
-        target="_blank"
-        ><svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="23"
-          height="23"
-          fill="#FFFFFF"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-          /></svg
-      ></a>
-    </div>
+        <!-- <a href="#" class="header__img"></a> -->
 
-    <!-- Featured Link -->
-    <h2>Featured</h2>
-    <a href="#" class="featured">My Website</a>
+        <nav class="header__nav flex-child">
+          <div class="nav__links">
+            <!-- Move these to the footer and replace with "Home", etc -->
+            <a class="nav__item" href="#">About</a>
+            <a class="nav__item" href="#">Portfolio</a>
+            <a class="nav__item" href="#">Contact</a>
 
-    <!-- Popular Content -->
-    <div class="content">
-      <h2>Freelance Content</h2>
-      <a
-        href="https://www.upwork.com/freelancers/~019e02afa7da01490c"
-        target="_blank"
-        >Upwork</a
-      >
-      <a href="#">Portfolio</a>
-      <a href="#">Certifications</a>
-      <a href="mailto:gbmytabc@yahoo.com">Contact</a>
-    </div>
+            <a class="nav__item" href="./links/links.html" target="_blank"
+              >Links</a
+            >
+          </div>
+        </nav>
+      </header>
+    </section>
+
+    <section class="welcome-section">
+      <h1>Welcome!</h1>
+      <p>About me info goes here.</p>
+    </section>
+
+    <section class="content-section">
+      <div class="content-section__item">
+        <h2>Blog Post</h2>
+        <p>
+          Doggo ipsum the neighborhood pupper puggorino shoob very jealous
+          pupper yapper, long woofer vvv. Heckin angery woofer what a nice floof
+          you are doing me the shock sub woofer fluffer super chub most angery
+          pupper I have ever seen, big ol pupper ruff clouds fat boi. Many pats
+          heckin good boys and girls borkdrive long bois stop it fren you are
+          doin me a concern doggorino heck, adorable doggo fat boi stop it fren
+          long bois noodle horse. Woofer blop many pats very taste wow clouds,
+          woofer puggorino. Long water shoob clouds stop it fren shoober sub
+          woofer, big ol pupper extremely cuuuuuute. Very taste wow much ruin
+          diet extremely cuuuuuute shooberino, puggo. Shibe sub woofer borkdrive
+          wow very biscit shooberino, doggo puggorino heckin length boy, shibe
+          long water shoob doggo. Long water shoob blep heckin good boys and
+          girls, you are doing me the shock.
+        </p>
+      </div>
+
+      <div class="content-section__item">
+        <h2>Blog Post</h2>
+        <p>
+          Doggo ipsum the neighborhood pupper puggorino shoob very jealous
+          pupper yapper, long woofer vvv. Heckin angery woofer what a nice floof
+          you are doing me the shock sub woofer fluffer super chub most angery
+          pupper I have ever seen, big ol pupper ruff clouds fat boi. Many pats
+          heckin good boys and girls borkdrive long bois stop it fren you are
+          doin me a concern doggorino heck, adorable doggo fat boi stop it fren
+          long bois noodle horse. Woofer blop many pats very taste wow clouds,
+          woofer puggorino. Long water shoob clouds stop it fren shoober sub
+          woofer, big ol pupper extremely cuuuuuute. Very taste wow much ruin
+          diet extremely cuuuuuute shooberino, puggo. Shibe sub woofer borkdrive
+          wow very biscit shooberino, doggo puggorino heckin length boy, shibe
+          long water shoob doggo. Long water shoob blep heckin good boys and
+          girls, you are doing me the shock.
+        </p>
+      </div>
+
+      <div class="content-section__item">
+        <h2>Contact</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          aliquid doloribus sint accusantium mollitia voluptatibus eaque nisi,
+          quaerat tempora possimus pariatur enim nihil et odit facere itaque,
+          quasi sit porro voluptatem odio quod rem, sequi similique excepturi.
+          Consequatur error cupiditate in provident, minima numquam unde nobis
+          officiis molestiae, quibusdam labore! Consequatur nobis molestias
+          natus officiis consequuntur voluptatum commodi, ab accusamus tempora
+          iusto eaque animi amet obcaecati, tenetur, unde quis architecto hic
+          totam esse dolores. Dolore pariatur similique velit ullam facere
+          temporibus earum optio asperiores nostrum, nisi deserunt
+          necessitatibus non laborum consequuntur fugiat quisquam nobis magni
+          impedit porro id, dicta sint! Aliquam doloremque ratione quod
+          consequatur repellat ad iste minus doloribus labore! Eos, vitae
+          mollitia doloremque molestiae tempore eaque quia excepturi saepe
+          possimus, commodi minima praesentium corporis consequuntur odit
+          debitis voluptatem qui aperiam delectus molestias nisi perferendis?
+          Facilis id sunt incidunt ipsa, ullam temporibus debitis tenetur
+          accusantium aut porro animi soluta voluptate repellat in! Ullam optio,
+          dolore quisquam debitis nobis quibusdam expedita perspiciatis natus
+          eligendi assumenda nihil molestias eum fugiat qui provident
+          consectetur ut. Possimus quaerat laboriosam delectus earum odit,
+          provident velit labore hic, voluptates sit laudantium itaque porro in
+          necessitatibus at? Labore aspernatur distinctio, eos quas qui quaerat
+          iusto fuga.
+        </p>
+      </div>
+    </section>
+
+    <!-- <footer class="footer">Some footer text.</footer> -->
   </body>
 </html>

@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  background-color: $darkTeal;
+
+  &__img {
+    order: 2;
+    // flex: 1;
+    padding: 0.75rem;
+    max-width: 5.75rem;
+    max-height: 5.75rem;
+    border-radius: 6.25rem;
+    // background-image: url("./images/profile.png");
+    transition: transform 200ms ease-in-out;
+
+    &:hover {
+      transform: scale(1.15);
+    }
+  }
+
+  &__text {
+    order: 1;
+    flex: 1;
+    // padding: 0.75rem;
+    font-weight: 600;
+    font-size: 2rem;
+    font-family: "UnifrakturMaguntia", cursive;
+    letter-spacing: 0.25rem;
+  }
+
+  &__nav {
+    order: 3;
+    flex: 1;
+    font-size: 1.1rem;
+
+    a {
+      color: $evenDarkerTeal;
+      transition: font-size 150ms ease-in-out;
+
+      &:not(:last-child) {
+        margin-right: 0.3rem;
+      }
+
+      &:hover {
+        color: $lightPink;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+.flex-child {
+  //   border: 1px solid red;
+  max-width: 15rem;
+}
