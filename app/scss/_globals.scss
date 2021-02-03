@@ -73,12 +73,12 @@ a {
 
   img {
     width: 1.55rem;
-    margin-right: 0.95rem;
   }
 }
 
 img,
 svg {
+  margin-right: 0.95rem;
   transition: transform 250ms ease-in-out;
 
   &:hover {
