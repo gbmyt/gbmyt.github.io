@@ -18,7 +18,7 @@ body {
     color-stop(2%, $darkPink),
     color-stop(108%, $lightPink)
   );
-  background-image: linear-gradient($darkpink 2%, $lightPink 108%);
+  background-image: linear-gradient($darkPink 2%, $lightPink 108%);
   color: #ffffff;
   min-height: 100vh;
   text-align: center;
@@ -32,8 +32,18 @@ h2 {
   letter-spacing: 0.08rem;
 }
 
+a {
+  max-width: 25rem;
+}
+
 .header {
-  margin: 2.75rem auto;
+  margin-top: 2.75rem;
+  margin-bottom: 0.75rem;
+
+  &__img {
+    width: 5rem;
+    border-radius: 60%;
+  }
 }
 
 .header > p {
@@ -41,9 +51,24 @@ h2 {
   color: $lightPink;
 }
 
-img {
-  width: 5rem;
-  border-radius: 60%;
+.logo {
+  width: 7.5rem;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+
+  img {
+    width: 1.55rem;
+    margin-right: 0.95rem;
+  }
+}
+
+img,
+svg {
   transition: transform 250ms ease-in-out;
 
   &:hover {
@@ -51,11 +76,8 @@ img {
   }
 }
 
-.logo {
-  width: 7.5rem;
-}
-
-a {
+a.featured,
+.content > a {
   display: block;
   margin: 0 auto 0.9375rem;
   padding: 0.95rem;
@@ -87,32 +109,5 @@ a {
 
       border: 2px solid $darkBlue;
     }
-  }
-}
-
-a,
-.channels {
-  max-width: 25rem;
-}
-
-a,
-.channels > a {
-  transition: color 200ms ease-in-out;
-
-  &:hover {
-    opacity: 60%;
-  }
-}
-
-.channels {
-  display: flex;
-  margin: 0 auto;
-
-  a {
-    flex: 1;
-    margin: 0.5rem;
-    padding: 0.3125rem 0.625rem;
-    background-color: $darkPink;
-    opacity: 70%;
   }
 }
