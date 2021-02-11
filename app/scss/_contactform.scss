@@ -1,0 +1,138 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body.contactform {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: $darkGrey;
+  letter-spacing: 0.075rem;
+}
+
+.flex-child {
+  margin: 3rem;
+}
+
+form {
+  width: 25.875rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55),
+    10px 10px 15px rgba(70, 70, 70, 0.12);
+  padding: 2.5rem 1.25rem;
+  border-radius: 0.625rem;
+}
+
+h6.contact-header {
+  margin-bottom: 0.625rem;
+  font: inherit;
+  text-transform: uppercase;
+}
+
+a.submit,
+a.home {
+  display: block;
+  margin-left: 10%;
+  text-align: center;
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+  padding: 0.675rem;
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55),
+    10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+
+a.home {
+  position: absolute;
+  right: 0;
+  width: 4rem;
+  height: 4rem;
+  font-size: 0.7rem;
+  border-radius: 1.875rem;
+  margin-bottom: 2rem;
+  padding-top: 1.38rem;
+  padding-left: 0.8rem;
+}
+
+a.submit {
+  border-radius: 1.875rem;
+  width: 80%;
+}
+
+input[type="text"],
+input[type="textarea"],
+input[type="email"] {
+  margin-bottom: 1.5625rem;
+  border: none;
+  background-color: transparent;
+  box-shadow: inset -10px -10px 15px rgba(255, 255, 255, 0.55),
+    inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+  padding: 0.625rem;
+  width: 90%;
+  border-radius: 0.4375rem;
+  outline: none;
+}
+
+input[type="textarea"] {
+  height: 6rem;
+}
+
+::placeholder {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: $grey;
+  letter-spacing: 0.08125rem;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  height: 2.5rem;
+  width: 7.5rem;
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55),
+    10px 10px 15px rgba(70, 70, 70, 0.12);
+  border: 5px solid $lightGrey;
+  border-radius: 1.875rem;
+  font: inherit;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="radio"]:after {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  color: $midGrey;
+  letter-spacing: 0.03125rem;
+}
+
+#developer:after {
+  content: "Developer";
+}
+
+#designer:after {
+  content: "Designer";
+}
+
+input[type="radio"]:checked,
+a:active {
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55),
+    10px 10px 15px rgba(70, 70, 70, 0.12),
+    inset -10px -10px 15px rgba(255, 255, 255, 0.55),
+    inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+
+input[type="radio"]:checked:after {
+  color: $deepPink;
+}

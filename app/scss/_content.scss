@@ -1,13 +1,20 @@
 .content-section {
-  &__item {
+  &__item,
+  .contact-form,
+  label {
     margin: 0 auto;
-    width: 80%;
-    // max-width: 85%;
-    box-shadow: 0.25rem 0.25rem 1rem silver;
-    border-radius: 0.75rem;
+  }
 
+  &__item {
+    width: 55%;
+    height: 34rem;
     padding: 2rem;
     margin-top: 3rem;
     margin-bottom: 3.5rem;
+    // border: 1px solid silver;
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55),
+      10px 10px 15px rgba(70, 70, 70, 0.12);
+    border-radius: 0.75rem;
+    // box-shadow: 0.1rem 0.1rem 0.3rem darkgray;
   }
 }

@@ -1,6 +1,31 @@
 .footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
   display: flex;
   align-items: center;
-  background-color: $darkTeal;
+  background-color: $blueCharcoal;
+  color: white;
   min-height: 5rem;
+}
+
+.social {
+  // border: 1px solid magenta;
+  display: flex;
+  justify-content: center;
+  padding-left: 1.2rem;
+
+  img {
+    width: 1.55rem;
+  }
+}
+
+img,
+svg {
+  margin-right: 0.95rem;
+  transition: transform 250ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.15);
+  }
 }

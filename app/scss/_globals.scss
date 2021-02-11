@@ -10,21 +10,22 @@ html {
 }
 
 body {
+  background-color: $lightGrey;
   margin: 0;
   padding: 0;
   text-align: center;
-  background-color: $lightTeal;
-  min-height: 175vh;
+  min-height: 100vh;
+  font-family: "Open Sans";
 }
 
 h1,
 h2,
 h3 {
-  color: $evenDarkerTeal;
+  color: $midGrey;
 }
 
 p {
-  color: $evenDarkerTeal;
+  color: $midGrey;
   line-height: 1.5;
   padding: 1rem;
 }
