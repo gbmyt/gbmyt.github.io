@@ -173,21 +173,17 @@ h3.intro {
   max-width: 18rem;
 }
 
-.content-section__item,
-.content-section .contact-form,
-.content-section label {
-  margin: 0 auto;
-}
-
 .content-section__item {
+  margin: 0 auto;
   width: 55%;
-  height: 34rem;
+  min-height: 34rem;
   padding: 2rem;
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   -webkit-box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55), 10px 10px 15px rgba(70, 70, 70, 0.12);
           box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55), 10px 10px 15px rgba(70, 70, 70, 0.12);
   border-radius: 0.75rem;
+  overflow: hidden;
 }
 
 .footer {
