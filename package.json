@@ -1,0 +1,22 @@
+{
+  "name": "casseopeian-light-pink",
+  "displayName": "Casseopeian Light Pink",
+  "description": "Light pink VS Code Theme",
+  "version": "0.0.1",
+  "publisher": "casseopeian",
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Casseopeian Light Pink",
+        "uiTheme": "vs",
+        "path": "./themes/Casseopeian Light Pink-color-theme.json"
+      }
+    ]
+  }
+}
