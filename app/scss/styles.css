@@ -191,6 +191,20 @@ h3.intro {
   overflow: hidden;
 }
 
+.content-section__item__social {
+  color: lightpink;
+  -webkit-transition: font-size 150ms ease-in-out;
+  transition: font-size 150ms ease-in-out;
+}
+
+.content-section__item__social:hover {
+  font-size: 1.2rem;
+}
+
+.content-section .handle {
+  color: lightpink;
+}
+
 .footer {
   position: relative;
   bottom: 0;

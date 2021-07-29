@@ -32,7 +32,7 @@ div {
 h2 {
   text-transform: uppercase;
   font-size: 1rem;
-  font-weight: lighter;
+  font-weight: bold;
   letter-spacing: 0.08rem;
 }
 
@@ -82,6 +82,10 @@ a {
 
   img {
     width: 1.55rem;
+  }
+
+  &__icon#twitch {
+    margin-top: 0.15rem;
   }
 }
 

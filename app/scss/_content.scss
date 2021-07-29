@@ -11,5 +11,18 @@
     border-radius: 0.75rem;
     overflow: hidden;
     // box-shadow: 0.1rem 0.1rem 0.3rem darkgray;
+    
+    &__social {
+      color: $lightPink;
+      transition: font-size 150ms ease-in-out;
+      
+      &:hover {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  
+  .handle {
+    color: $lightPink;
   }
 }
