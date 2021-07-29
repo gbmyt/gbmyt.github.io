@@ -165,4 +165,10 @@ a.featured span.discord-left,
 .content > a span.discord-left {
   margin-left: .8rem;
 }
+
+a.featured span.special__chars,
+.content > a span.special__chars {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
 /*# sourceMappingURL=style.css.map */
