@@ -26,6 +26,11 @@ h3 {
   color: #606060;
 }
 
+hr {
+  width: 48rem;
+  margin: 2rem;
+}
+
 p {
   color: #606060;
   line-height: 1.5;
