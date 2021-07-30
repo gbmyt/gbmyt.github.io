@@ -9,6 +9,7 @@ html {
   box-sizing: inherit;
 }
 
+
 body {
   background-color: $darkPink;
   background-image: -webkit-gradient(
@@ -55,6 +56,20 @@ a {
     border-radius: 60%;
     margin: 0;
   }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.handle {
+  // vertical-align: top;
+  padding: 0.5rem;
+  margin-top: 1.25rem;
+  height: 2.5rem;
+  background-color: lightGrey;
+  border-radius: 0.75rem;
 }
 
 .header > p {
@@ -141,18 +156,18 @@ a.featured,
 
   span {
     &.featured__text {
-      padding-top: .35rem;
+      padding-top: .23rem;
       padding-right: 0.85rem;
     }
 
-    &.discord-right, .discord-left {
-      font-size: 1.5rem;
-      line-height: 0.75;
+    &.discord-left {
+      margin-left: 1.15rem;
     }
 
-    &.discord-left {
-      margin-left: .8rem;
+    &.discord-right {
+      margin-left: .03rem;
     }
+
     &.special__chars{
       padding-left: 0.75rem;
       padding-right: 0.75rem;

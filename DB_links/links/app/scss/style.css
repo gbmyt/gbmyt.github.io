@@ -55,6 +55,23 @@ a:hover {
   margin: 0;
 }
 
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.handle {
+  padding: 0.5rem;
+  margin-top: 1.25rem;
+  height: 2.5rem;
+  background-color: lightGrey;
+  border-radius: 0.75rem;
+}
+
 .header > p {
   font-size: 0.8rem;
   color: #f6f0c4;
@@ -154,20 +171,18 @@ a.featured.featured:before,
 
 a.featured span.featured__text,
 .content > a span.featured__text {
-  padding-top: .35rem;
+  padding-top: .23rem;
   padding-right: 0.85rem;
-}
-
-a.featured span.discord-right, a.featured span .discord-left,
-.content > a span.discord-right,
-.content > a span .discord-left {
-  font-size: 1.5rem;
-  line-height: 0.75;
 }
 
 a.featured span.discord-left,
 .content > a span.discord-left {
-  margin-left: .8rem;
+  margin-left: 1.15rem;
+}
+
+a.featured span.discord-right,
+.content > a span.discord-right {
+  margin-left: .03rem;
 }
 
 a.featured span.special__chars,
