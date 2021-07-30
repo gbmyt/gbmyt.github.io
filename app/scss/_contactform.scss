@@ -31,7 +31,12 @@ form {
   border-radius: 0.625rem;
 }
 
+h3 {
+  margin-bottom: 1.75rem;
+}
+
 h6.contact-header {
+  margin-top: 1.75rem;
   margin-bottom: 0.625rem;
   font: inherit;
   text-transform: uppercase;
@@ -117,12 +122,12 @@ input[type="radio"]:after {
   letter-spacing: 0.03125rem;
 }
 
-#developer:after {
-  content: "Developer";
+#phone:after {
+  content: "Phone";
 }
 
-#designer:after {
-  content: "Designer";
+#email:after {
+  content: "Email";
 }
 
 input[type="radio"]:checked,
