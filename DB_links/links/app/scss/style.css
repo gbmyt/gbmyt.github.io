@@ -65,9 +65,14 @@ a:hover {
 }
 
 .handle {
-  padding: 0.5rem;
-  margin-top: 1.25rem;
-  height: 2.5rem;
+  padding-top: 0.33rem;
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+  margin-left: 0.75rem;
+  height: 1.75rem;
+  width: 5rem;
+  text-decoration: none;
+  color: darkgray;
   background-color: lightGrey;
   border-radius: 0.75rem;
 }
