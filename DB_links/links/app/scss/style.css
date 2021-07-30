@@ -183,11 +183,7 @@ a.featured span.featured__text,
 a.featured span.discord-left,
 .content > a span.discord-left {
   margin-left: 1.15rem;
-}
-
-a.featured span.discord-right,
-.content > a span.discord-right {
-  margin-left: .03rem;
+  margin-right: .075rem;
 }
 
 a.featured span.special__chars,
