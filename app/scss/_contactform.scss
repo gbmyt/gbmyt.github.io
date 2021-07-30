@@ -6,6 +6,24 @@
   box-sizing: border-box;
 }
 
+.build-service-description {
+  margin-top: 12rem;
+  margin-left: 4rem;
+  padding: 10%;
+  overflow: hidden;
+  padding: 3%;
+  width: 38rem;
+}
+
+.FAQ {
+  margin-top: 10rem;
+  margin-left: 45rem;
+  padding: 10%;
+  overflow: hidden;
+  padding: 3%;
+  width: 40rem;
+}
+
 body.contactform {
   display: flex;
   font-family: "Poppins", sans-serif;
@@ -20,7 +38,7 @@ body.contactform {
 }
 
 form {
-  width: 25.875rem;
+  width: 35rem;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -36,10 +54,14 @@ h3 {
 }
 
 h6.contact-header {
-  margin-top: 1.75rem;
+  margin-top: 1.5rem;
   margin-bottom: 0.625rem;
   font: inherit;
   text-transform: uppercase;
+}
+
+.contact-header#contact-info {
+  margin-top: 2.625rem;
 }
 
 a.submit,
@@ -70,6 +92,8 @@ a.home {
 a.submit {
   border-radius: 1.875rem;
   width: 80%;
+  margin-top: 1.3rem;
+  margin-bottom: 1.75rem;
 }
 
 input[type="text"],
@@ -86,8 +110,17 @@ input[type="email"] {
   outline: none;
 }
 
+input.half-width {
+  width: 37%;
+  margin-right: 2rem;
+}
+
+input.tqtr-width {
+  width: 44%;
+}
+
 input[type="textarea"] {
-  height: 6rem;
+  height: 8rem;
 }
 
 ::placeholder {

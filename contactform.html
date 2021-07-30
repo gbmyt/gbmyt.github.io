@@ -10,22 +10,53 @@
     />
     <link rel="stylesheet" href="/app/scss/styles.css" />
   </head>
+
   <body class="contactform">
+    <!-- ''' Add A Description Paragraph and FAQ Section here ''' -->
+    <section>
+      <div class="build-service-description">
+        <h3>Welcome to my keyboard build service!</h3>
+        <p>Hey, I'm Gabby and I build keyboards. If you're interested in having me build your keyboard for you, please fill out the attached proposal form and make sure to leave your contact info, and I'll get back to you!</p>
+      </div>
+    </section>
+    
+    <section class="FAQ">
+      <h3>FAQ goes here</h3>
+    </section>
+    
     <a href="./index.html" class="home flex-child">Home</a>
     <form>
-      <h3 class="form-title">Build Service</h3>
+      <h3 class="form-title">Keyboard Build Service</h3>
       <h6 class="contact-header">Full Name</h6>
-      <input type="text" placeholder="Full name" />
+      <input class="half-width" type="text" placeholder="First name" />
+      <input class="tqtr-width" type="text" placeholder="Last name" />
 
       <h6 class="contact-header">Preferred Contact Method?</h6>
       <input type="radio" name="contact-method" id="phone" />
       <input type="radio" name="contact-method" id="email" />
 
-      <h6 class="contact-header">Email Address</h6>
-      <input type="email" placeholder="youremail@email.com" />
+      <h6 class="contact-header" id="contact-info">Contact Info</h6>
+      <input class="half-width" type="email" placeholder="youremail@email.com" />
+      <input class="tqtr-width" type="text" placeholder="Country" />
       
-      <h6 class="contact-header">Keyboard</h6>
-      <input type="email" placeholder="Type of keyboard?" />
+      <h6 class="contact-header">Keyboard Info</h6>
+      <div class="half-width-container">
+        <div>
+          <input class="half-width" type="text" placeholder="Case" />
+          <input class="tqtr-width" type="text" placeholder="PCB" />
+        </div>
+        
+        <div>
+          <input class="half-width" type="text" placeholder="Plate" />
+          <input class="tqtr-width" type="text" placeholder="Stabilizers" />
+        </div>
+        
+        <div>
+          <input class="half-width" type="text" placeholder="Switches" />
+          <input class="tqtr-width" type="text" placeholder="Lube Preference?" />
+        </div>
+      </div>
+
       <h6 class="contact-header">Notes</h6>
       <input type="textarea" placeholder="Any additional notes for me?" />
       <a href="#" class="submit">SUBMIT</a>
