@@ -54,6 +54,10 @@ a:hover {
   width: 50%;
 }
 
+.keyboard-builds {
+  text-align: left;
+}
+
 .pall {
   padding-top: 0.25rem;
   padding-right: 0.25rem;
@@ -95,6 +99,11 @@ a:hover {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+}
+
+.keyboard-specs {
+  padding: 0.8rem 0;
+  font-size: 0.95rem;
 }
 
 .header {

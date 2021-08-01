@@ -52,6 +52,10 @@ a:hover {
   width: 50%;
 }
 
+.keyboard-builds {
+  text-align: left;
+}
+
 // Padding
 .pall {
   padding-top: 0.25rem;
@@ -83,4 +87,9 @@ a:hover {
   &-jc-e {
     justify-content: end;
   }
+}
+
+.keyboard-specs {
+  padding: 0.8rem 0;
+  font-size: 0.95rem;
 }
