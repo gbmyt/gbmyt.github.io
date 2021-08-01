@@ -53,6 +53,7 @@ a {
 
   &__img {
     width: 5rem;
+    border: 1.25px solid rgba(250,250,250,0.75);
     border-radius: 60%;
     margin: 0;
   }
@@ -72,9 +73,13 @@ a {
   height: 1.75rem;
   width: 5rem;
   text-decoration: none;
+  border-radius: 0.75rem;
+}
+
+.handle,
+.channels__link {
   color: darkgray;
   background-color: lightGrey;
-  border-radius: 0.75rem;
 }
 
 .header > p {
@@ -118,10 +123,46 @@ svg {
     transform: scale(1.15);
   }
 }
+a.featured,
+.channels > a,
+.content > a {
+  display: block;
+}
+
+.channels {
+  display: flex;
+  justify-content: center;
+  max-width: 30rem;
+  margin: 0 auto;
+  padding: 0.35rem 3rem 2rem 3rem;
+  
+  &__link {
+    flex: 1;
+    color: $white;
+    height: 2rem;
+    padding: 0.45rem 1rem;
+    font-size: 0.85rem;
+    // font-weight: bold;
+    text-decoration: none;
+    border: 1.25px solid white;
+    border-radius: 3rem;
+    color: rgba(250,250,250,1);
+    background-color: rgba(204,135,145,0.75);
+    transition: transform 250ms ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  
+  &__link:not(:last-child) {
+    margin-right: 0.75rem;
+  }
+}
+
 
 a.featured,
 .content > a {
-  display: block;
   margin: 0 auto 0.9375rem;
   padding: 0.95rem;
 
@@ -130,7 +171,6 @@ a.featured,
   text-decoration: none;
   border: 2px solid white;
   border-radius: 3rem;
-
 
   &.featured {
     display: flex;
@@ -157,8 +197,8 @@ a.featured,
       border: 2px solid $darkBlue;
       border-radius: 3rem;
     }
-  }
-
+  }  
+  
   span {
     &.featured__text {
       padding-top: .23rem;
@@ -167,12 +207,7 @@ a.featured,
 
     &.discord-left {
       margin-left: 1.15rem;
-      // margin-right: .075rem;
     }
-
-    // &.discord-right {
-    //   margin-left: .03rem;
-    // }
 
     &.special__chars{
       padding-left: 0.75rem;
