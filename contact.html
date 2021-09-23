@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Footer</title>
+    <link rel="stylesheet" href="/app/scss/styles.css" />
+</head>
+
+<body>
+  <section class="header-section">
+    <header class="header pall flex flex-jc-sb flex-ai-c">
+      <a class="header__text left-align flex-child" href="https://carnaluna.github.io/" >Dsa Bae</a>
+      <a class="flex-child" href="https://carnaluna.github.io/">
+        <img
+          class="header__img"
+          src="./images/profile_photo.png"
+          alt="profile-image"/>
+      </a>
+
+      <nav class="header__nav flex-child">
+        <div class="nav__links">
+          <a class="nav__item" href="#about">About</a>
+          <a class="nav__item" href="#keyboards">Keyboards</a> 
+          <a class="nav__item" href="./contactform.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+  </section>
+
+    <div class="content">
+        <section class="contactform">
+            <form method="post" action="/">
+              <h2 class="form-title">Keyboard Build Service</h2>
+              <h6 class="contact-header">Full Name</h6>
+              <input class="half-width" type="text" placeholder="First name" />
+              <input class="tqtr-width" type="text" placeholder="Last name" />
+        
+              <!-- <h6 class="contact-header">Preferred Contact Method?</h6>
+              <input type="radio" name="contact-method" id="phone" />
+              <input type="radio" name="contact-method" id="email" /> -->
+        
+              <h6 class="contact-header" id="contact-info">Contact Info</h6>
+              <input class="half-width" type="email" placeholder="youremail@email.com" />
+              <input class="tqtr-width" type="text" placeholder="Country" />
+              
+              <h6 class="contact-header">Keyboard Info</h6>
+              <div class="half-width-container">
+                <div>
+                  <input class="half-width" type="text" placeholder="Case" />
+                  <input class="tqtr-width" type="text" placeholder="PCB" />
+                </div>
+                
+                <div>
+                  <input class="half-width" type="text" placeholder="Plate" />
+                  <input class="tqtr-width" type="text" placeholder="Stabilizers" />
+                </div>
+                
+                <div>
+                  <input class="half-width" type="text" placeholder="Switches" />
+                  <input class="tqtr-width" type="text" placeholder="Lube Preference?" />
+                </div>
+              </div>
+        
+              <h6 class="contact-header">Notes</h6>
+              <input type="textarea" placeholder="Any additional notes for me?" />
+              <a href="#" class="submit">SUBMIT</a>
+            </form>
+          </section>
+    </div>
+
+    <div class="footer">
+        <footer>
+            <div class="social">
+              <a
+                class="social__icon"
+                href="https://twitter.com/dsa_bae"
+                target="_blank"
+                ><img src="/links/img/SVGs/Twitter.svg" alt="Twitter"
+              /></a>
+              <a
+              class="social__icon"
+              href="https://www.instagram.com/dsa.bae/"
+              target="_blank"
+              ><img src="/links/img/SVGs/Instagram.svg" alt="Instagram"
+              /></a>
+              <a
+              class="social__icon"
+              href="https://github.com/carnaluna"
+              target="_blank"
+              ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="23"
+              height="23"
+              fill="#FFFFFF"
+              viewBox="0 0 24 24"
+              >
+              <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              /></svg
+              ></a>
+              <a
+              class="social__icon"
+              id="twitch"
+              href="https://www.twitch.tv/dsabae"
+              target="_blank"
+              ><svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="23px" height="23px"><path d="M 5.3125 1 L 5.0625 1.65625 L 2.0625 9.65625 L 2 9.8125 L 2 43 L 13 43 L 13 49 L 20.40625 49 L 20.71875 48.71875 L 26.4375 43 L 35.40625 43 L 35.71875 42.71875 L 48 30.4375 L 48 1 Z M 6.6875 3 L 46 3 L 46 29.59375 L 34.59375 41 L 25.59375 41 L 19.59375 47 L 15 47 L 15 41 L 4 41 L 4 10.1875 Z M 10 5 L 10 35 L 18 35 L 18 42.40625 L 19.71875 40.71875 L 25.4375 35 L 37.40625 35 L 37.71875 34.71875 L 43.71875 28.71875 L 44 28.40625 L 44 5 Z M 12 7 L 42 7 L 42 27.5625 L 36.5625 33 L 24.59375 33 L 24.28125 33.28125 L 20 37.5625 L 20 33 L 12 33 Z M 20 13 L 20 27 L 26 27 L 26 13 Z M 30 13 L 30 27 L 36 27 L 36 13 Z M 22 15 L 24 15 L 24 25 L 22 25 Z M 32 15 L 34 15 L 34 25 L 32 25 Z"/></svg></a>
+            </div>
+          </footer>
+    </div>
+</body>
+</html>

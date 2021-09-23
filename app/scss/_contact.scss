@@ -1,0 +1,170 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.contactform {
+    flex: 1 0 auto;
+    color: $darkGrey;
+    font-family: $poppins;
+    font-weight: 600;
+    font-size: 0.875rem;
+    letter-spacing: 0.075rem;
+}
+
+.flex-child {
+    margin: 3rem;
+}
+
+form {
+    top: 52%;
+    left: 50%;
+    max-height: 75%;
+    width: 50%;
+    position: absolute;
+    border-radius: 0.625rem;
+    overflow: auto;
+
+    transform: translate(-50%, -50%);
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55),
+        10px 10px 15px rgba(70, 70, 70, 0.12);
+    padding: 2.5rem 1.25rem;
+}
+
+h3 {
+    margin-bottom: 1.75rem;
+}
+
+h6.contact-header {
+    margin-top: 1.5rem;
+    margin-bottom: 0.625rem;
+    font: inherit;
+    text-transform: uppercase;
+}
+
+.contact-header#contact-info {
+    margin-top: 2.625rem;
+}
+
+a.submit,
+a.home {
+    display: block;
+    margin-left: 10%;
+    text-align: center;
+    font: inherit;
+    color: inherit;
+    text-decoration: none;
+    padding: 0.675rem;
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55),
+        10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+
+a.home {
+    position: absolute;
+    right: 0;
+    width: 4rem;
+    height: 4rem;
+    font-size: 0.7rem;
+    border-radius: 1.875rem;
+    margin-bottom: 2rem;
+    padding-top: 1.38rem;
+    padding-left: 0.8rem;
+}
+
+a.submit {
+    border-radius: 1.875rem;
+    width: 80%;
+    margin-top: 1.3rem;
+    margin-bottom: 1.75rem;
+}
+
+input[type="text"],
+input[type="textarea"],
+input[type="email"] {
+    margin-bottom: 1.5625rem;
+    border: none;
+    background-color: transparent;
+    box-shadow: inset -10px -10px 15px rgba(255, 255, 255, 0.55),
+        inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+    padding: 0.625rem;
+    width: 90%;
+    border-radius: 0.4375rem;
+    outline: none;
+}
+
+input.half-width {
+    width: 37%;
+    margin-right: 2rem;
+}
+
+input.tqtr-width {
+    width: 44%;
+}
+
+input[type="textarea"] {
+    height: 15%;
+}
+
+::placeholder {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: $grey;
+    letter-spacing: 0.08125rem;
+}
+
+input[type="radio"] {
+-webkit-appearance: none;
+-moz-appearance: none;
+    appearance: none;
+    position: relative;
+    height: 2.5rem;
+    width: 7.5rem;
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55),
+        10px 10px 15px rgba(70, 70, 70, 0.12);
+    border: 5px solid $lightGrey;
+    border-radius: 1.875rem;
+    font: inherit;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="radio"]:after {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    color: $midGrey;
+    letter-spacing: 0.03125rem;
+}
+
+#phone:after {
+    content: "Phone";
+}
+
+#email:after {
+    content: "Email";
+}
+
+input[type="radio"]:checked,
+a:active {
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55),
+        10px 10px 15px rgba(70, 70, 70, 0.12),
+        inset -10px -10px 15px rgba(255, 255, 255, 0.55),
+        inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+
+input[type="radio"]:checked:after {
+    color: $deepPink;
+}
+
+.footer {
+    flex-shrink: 0;
+}
