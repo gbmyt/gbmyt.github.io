@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Gabriela Taylor</title>
+    <title>DSA Bae</title>
     <link
       href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap"
       rel="stylesheet"
@@ -11,88 +11,114 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/app/scss/styles.css" />
+    <link href="/app/scss/styles.css" rel="stylesheet" />
   </head>
 
   <body>
     <section class="header-section">
       <header class="header pall flex flex-jc-sb flex-ai-c">
-        <a class="header__text flex-child" href="https://carnaluna.github.io/"
-          >Gabriela Taylor</a
-        >
-        <a class="flex-child" href="https://carnaluna.github.io/"
-          ><img
+        <a class="header__text left-align flex-child" href="https://carnaluna.github.io/" >Dsa Bae</a>
+        <a class="flex-child" href="https://carnaluna.github.io/">
+          <img
             class="header__img"
             src="./images/profile_photo.png"
-            alt="profile-image"
-        /></a>
+            alt="profile-image"/>
+        </a>
 
         <nav class="header__nav flex-child">
           <div class="nav__links">
             <!-- Move these to the footer and replace with "Home", etc -->
-            <a class="nav__item" href="#">About</a>
-            <!-- <a class="nav__item" href="#">Portfolio</a> -->
-            <!-- <a class="nav__item" href="./contactform.html">Contact</a> -->
+            <a class="nav__item" href="#about">About</a>
+            <a class="nav__item" href="#keyboards">Keyboards</a> 
+            <a class="nav__item" href="./contactform.html">Contact</a>
 
-            <a class="nav__item" href="./DB_links/links.html">Links</a
-            >
+            <!-- <a class="nav__item" href="./DB_links/links.html">Links</a -->
           </div>
         </nav>
       </header>
     </section>
 
-    <section class="welcome-section">
+    <!-- <section class="welcome-section">
       <h3 class="intro">
         Freelance data management specialist and front-end dev hobbyist. 
         <br/> I build interactive dashboards, and collect mechanical keyboards.
       </h3>
-    </section>
+    </section> -->
 
     <section class="content-section">
       <div class="content-section__item">
-        <h2>A little about me</h2>
-        <p>I was raised in Florida and have spent most of my life here, but was originally born in Poland -- Polish was actually my first language.</p>
-        <p>During the day I work in Supply Chain, but I moonlight as a freelance dashboard designer, an amateur-ish programmer, mechanical keyboard enthusiast, and sometimes painter/sewer/general crafty person.</p>
-        <p>When I get bored of all that (rare) I spend time self-teaching Japanese, reading fantasy novels, playing Fallout 4, or trying my hand at artisan keycap and keyset design. I hope to invest in and experiment with materials in order to open my own shop sometime this coming year!</p>
-        <p>Catch me on social media to stay up-to-date on keyboard builds, which I'll be streaming on <a href="https://www.twitch.tv/dsabae" target="_blank" class="content-section__item__social"><strong>Twitch</strong>.</a></p>
-        <p><a href="https://www.instagram.com/dsa.bae/" class="content-section__item__social">@dsa.bae</a> on Instagram</p>
-        <p><a href="https://twitter.com/dsa_bae" class="content-section__item__social">@dsa_bae</a> on Twitter</p>
-        <p><a href="https://www.twitch.tv/dsabae" class="content-section__item__social">@dsabae</a> on Twitch</p>
+        <h2 class="pall" id="about">~ A little about me ~</h2>
+        <div class="container">
+          <p>Born and raised in Florida, but was originally born in Poland -- Polish was actually my first language.</p>
+          <p>During the day I work in Supply Chain, but I moonlight as a programming hobbyist, mechanical keyboard enthusiast, and sometimes painter/sewer.</p>
+          <p>When I get bored of all that (rare) I spend time self-teaching Japanese, reading fantasy novels, playing Fallout 4, or trying my hand at artisan keycap and key set design. I hope to invest in and experiment with materials in order to open my own shop sometime this coming year!</p>
+        </div>
+      
+      <div class="content-section__social pall">
+        <p>Catch me on social media to stay up-to-date on keyboard builds, which I'll be streaming on 
+          <a href="https://www.twitch.tv/dsabae" target="_blank" class="content-section__social__link"><strong>Twitch</strong>.</a>
+        </p>
+        <p class="bold">Instagram: 
+          <a href="https://www.instagram.com/dsa.bae/" class="content-section__social__link" target="_blank">@dsa.bae</a>
+        </p>
+        <p class="bold">Twitter: 
+          <a href="https://twitter.com/dsa_bae" class="content-section__social__link" target="_blank">@dsa_bae</a>
+        </p>
+        <p class="bold">Twitch: 
+          <a href="https://www.twitch.tv/dsabae" class="content-section__social__link" target="_blank">@dsabae</a>
+        </p>
+      </div>
       </div>
 
       <div class="content-section__item">
-        <h2>~ Keyboards ~</h2>
-        <p class="keyboard-specs">
-          - Ergodox EZ (Current Daily Driver)
-        </p>
-        <p class="keyboard-specs">
-          - RGB Hot Swap Gamakay K61
-        </p>
-        <p class="keyboard-specs">
-          - AKKO 8034 
-        </p>
-        <br>
+        <h2 id="keyboards">~ Keyboards ~</h2>
+        <div class="container left-align">
+          <p>
+            - <span class="bold">Daily Driver: </span> Ergodox EZ
+          </p>
+          <p>
+            - RGB Hot Swap Gamakay K61
+          </p>
+          <p>
+            - AKKO 8034 // Japan World Tour
+          </p>
+          <br>
+        </div>
 
-        <h3>~ Upcoming Builds ~</h3>
-        <h5 class="keyboard-builds">          
-          ✦ Mercutio 40% Through-Hole (Mechwild)
-        </h5>
-        <p class="keyboard-specs">FR4 Sandwhich Board with OLED display and rotary encoder</p>
-        <p class="keyboard-specs">Black case and PCB</p>
+        <h3 class="pall">~ Upcoming Builds ~</h3>
 
-        <h5 class="keyboard-builds"> 
-          ✦ Microdox 30% (Boardsource)
-        </h5>
-        <p class="keyboard-specs">Red FR4 Case and PCB with cute PCB art!</p>
+        <div class="container">
+          <h3 class="kb-builds">          
+            ✦ Mercutio 40% Through-Hole (Mechwild)
+          </h3>
+          <p>FR4 Sandwhich Board with OLED display and rotary encoder</p>
+          <p>Black case and PCB</p>
+        </div>
 
-        <h5 class="keyboard-builds">          
-          ✦ Rhymestone 40-Key Split Ortho (Boardsource)
-        </h5>
-        <p class="keyboard-specs">Clear Acrylic Case, White FR4 PCB</p>
+        <div class="container">
+          <h3 class="kb-builds"> 
+            ✦ Microdox 30% (Boardsource)
+          </h3>
+          <p>Red FR4 Case and PCB with cute backplate art</p>
+          <p>Gateron Ink Red v2s // Krytox 205g0 on stem & housings // 0.15mm TX Films</p>
+        </div>
 
-        <h5 class="keyboard-builds">          
-          ✦ SMKeyboards Alice (Sandwhich, top half Wisteria, bottom half Non-Glare Clear)
-        </h5>
+        <div class="container">
+          <h3 class="kb-builds">          
+            &#10003 Rhymestone 40-Key Split Ortho (Boardsource)
+          </h3>
+          <p>Clear Acrylic Case, White FR4 PCB</p>
+        </div>
+
+        <div class="container">
+          <h3 class="kb-builds">          
+            ✦ SMKeyboards Alice 
+          </h3>
+            <p>Sandwich board, stacked acrylic case.</p>
+            <p>Top half Wisteria, bottom half Non-Glare Clear</p>
+            <p>White Sneakbox PCB // USB-C Bottom-Oriented</p>
+            <p>C3Equalz x JWK Banana Splits // Krytox 205g0 on stem & housings // 0.15mm Pink TX Films</p>
+        </div>
 
       </div>
     </section>
@@ -107,13 +133,13 @@
         /></a>
         <a
         class="social__icon"
-        href="https://www.instagram.com/casseopeian/"
+        href="https://www.instagram.com/dsa.bae/"
         target="_blank"
         ><img src="/links/img/SVGs/Instagram.svg" alt="Instagram"
         /></a>
         <a
         class="social__icon"
-        href="https://github.com/dsa.bae"
+        href="https://github.com/carnaluna"
         target="_blank"
         ><svg
         xmlns="http://www.w3.org/2000/svg"

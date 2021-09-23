@@ -24,6 +24,10 @@ h3 {
   color: $midGrey;
 }
 
+h3 {
+  font-size: 0.94rem;
+}
+
 hr {
   width: 48rem;
   margin: 2rem;
@@ -32,17 +36,20 @@ hr {
 p {
   color: $midGrey;
   line-height: 1.5;
-  padding: 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 a,
 a:visited,
 a:hover {
+  font-weight: normal;
   text-decoration: none;
 }
 
 .container {
   max-width: 68rem;
+  margin: 1.75rem 0 1.05rem 0;
+  // border: 1px solid red;
 }
 
 .center {
@@ -52,7 +59,15 @@ a:hover {
   width: 50%;
 }
 
-.keyboard-builds {
+.border {
+  border: 1px solid red;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.left-align {
   text-align: left;
 }
 
@@ -89,7 +104,4 @@ a:hover {
   }
 }
 
-.keyboard-specs {
-  padding: 0.8rem 0;
-  font-size: 0.95rem;
-}
+

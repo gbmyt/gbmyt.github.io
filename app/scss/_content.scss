@@ -1,28 +1,33 @@
 .content-section {
   &__item {
     margin: 0 auto;
-    width: 55%;
+    width: 80%;
     min-height: 34rem;
-    padding: 2rem;
-    margin-top: 3rem;
+    padding: 4rem 5.75rem 5rem 5.75rem;
+    margin-top: 5rem;
     margin-bottom: 3.5rem;
     box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55),
       10px 10px 15px rgba(70, 70, 70, 0.12);
     border-radius: 0.75rem;
     overflow: hidden;
-    // box-shadow: 0.1rem 0.1rem 0.3rem darkgray;
-    
-    &__social {
+  }
+
+  &__social {
+    margin: 1.75rem 1rem;
+
+    &__link {
       color: $lightPink;
       transition: font-size 150ms ease-in-out;
       
       &:hover {
-        font-size: 1.2rem;
+        font-size: 1.055rem;
       }
     }
   }
   
-  .handle {
-    color: $lightPink;
+  .kb-builds {
+    text-align: left;
+    font-style: italic;
   }
 }
+
