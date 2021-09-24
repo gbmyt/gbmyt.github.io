@@ -5,8 +5,8 @@
   }
   
   &__about, &__card {
-    max-width: 87%;;
-    max-height: 37rem;
+    width: 87%;;
+    height: 36rem;
   }
   
   &__item {
@@ -21,14 +21,22 @@
     overflow: hidden;
   }
 
+  &__social-icons {
+    margin: 6rem 0 0 0;
+  }
+
   &__social {
+    margin-top: 3rem;
     
     span.content__social-link {
       display: inline-block;
-      padding: 0.8rem 1rem;
-      padding: 3.5rem 3rem 3rem 3rem;
-      //border: 1px solid red;
+      padding: 3.75rem 2rem 2.5rem 2rem;
     }  
+    
+    &__icon {
+      //border: 1px solid $dbDkPurple;
+      padding: 0.25rem;
+    }
 
     &__link {
       color: $dbDkPurple;

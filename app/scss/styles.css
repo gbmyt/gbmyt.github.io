@@ -417,8 +417,8 @@ input[type="radio"]:checked:after {
 }
 
 .content__about, .content__card {
-  max-width: 87%;
-  max-height: 37rem;
+  width: 87%;
+  height: 36rem;
 }
 
 .content__item {
@@ -433,10 +433,21 @@ input[type="radio"]:checked:after {
   overflow: hidden;
 }
 
+.content__social-icons {
+  margin: 6rem 0 0 0;
+}
+
+.content__social {
+  margin-top: 3rem;
+}
+
 .content__social span.content__social-link {
   display: inline-block;
-  padding: 0.8rem 1rem;
-  padding: 3.5rem 3rem 3rem 3rem;
+  padding: 3.75rem 2rem 2.5rem 2rem;
+}
+
+.content__social__icon {
+  padding: 0.25rem;
 }
 
 .content__social__link {
@@ -471,12 +482,12 @@ input[type="radio"]:checked:after {
 .slideshow-container {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 2.25rem 0 0 4rem;
+  margin: 0.7rem 0 0 4rem;
   z-index: 1;
 }
 
 .slideshow-imgs {
-  max-width: 60rem;
+  width: 33rem;
   position: relative;
 }
 
