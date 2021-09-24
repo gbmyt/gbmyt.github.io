@@ -22,9 +22,12 @@
   }
 
   &__social {
-    span.content__social {
-      display: block;
+    
+    span.content__social-link {
+      display: inline-block;
       padding: 0.8rem 1rem;
+      padding: 3.5rem 3rem 3rem 3rem;
+      //border: 1px solid red;
     }  
 
     &__link {

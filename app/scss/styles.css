@@ -433,9 +433,10 @@ input[type="radio"]:checked:after {
   overflow: hidden;
 }
 
-.content__social span.content__social {
-  display: block;
+.content__social span.content__social-link {
+  display: inline-block;
   padding: 0.8rem 1rem;
+  padding: 3.5rem 3rem 3rem 3rem;
 }
 
 .content__social__link {
