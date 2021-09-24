@@ -426,7 +426,7 @@ input[type="radio"]:checked:after {
 }
 
 .content__card {
-  padding: 1rem 3rem 2rem 3rem;
+  padding: 1rem 2rem 2rem 2rem;
   -webkit-box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55), 10px 10px 15px rgba(70, 70, 70, 0.12);
           box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55), 10px 10px 15px rgba(70, 70, 70, 0.12);
   border-radius: 0.75rem;
