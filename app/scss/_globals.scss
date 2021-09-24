@@ -1,9 +1,11 @@
 html, body {
   height: 100%;
+  margin: 0 auto;
+  padding: 0;
 }
 
 html {
-  font-size: 1.05rem;
+  font-size: 1.35rem;
   box-sizing: border-box;
 }
 
@@ -17,8 +19,6 @@ body {
   display: flex;
   flex-direction: column;
   background-color: $lightGrey;
-  margin: 0;
-  padding: 0;
   text-align: center;
   font-family: "Open Sans";
 }
@@ -38,19 +38,15 @@ h3 {
   color: $midGrey;
 }
 
-h3 {
-  font-size: 1.1rem;
-}
-
 hr {
-  width: 48rem;
+  width: 100%;
   margin: 2rem;
 }
 
 p {
   color: $midGrey;
   line-height: 1.5;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 a,
@@ -60,12 +56,12 @@ a:hover {
   text-decoration: none;
 }
 
-// .center {
-//   display: block;
-//   margin-left: auto;
-//   margin-right: auto;
-//   width: 50%;
-// }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 .border {
   border: 1px solid red;
@@ -111,5 +107,4 @@ a:hover {
     justify-content: end;
   }
 }
-
 

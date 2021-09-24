@@ -31,41 +31,41 @@
 
     <div class="content">
         <section class="contactform">
-            <form method="post" action="/">
+            <form id="contact-form" action="/">
               <h2 class="form-title">Keyboard Build Service</h2>
               <h6 class="contact-header">Full Name</h6>
-              <input class="half-width" type="text" placeholder="First name" />
-              <input class="tqtr-width" type="text" placeholder="Last name" />
+              <input name="first_name" class="half-width" type="text" placeholder="First name" />
+              <input name="last_name" class="tqtr-width" type="text" placeholder="Last name" />
         
               <!-- <h6 class="contact-header">Preferred Contact Method?</h6>
               <input type="radio" name="contact-method" id="phone" />
               <input type="radio" name="contact-method" id="email" /> -->
         
               <h6 class="contact-header" id="contact-info">Contact Info</h6>
-              <input class="half-width" type="email" placeholder="youremail@email.com" />
-              <input class="tqtr-width" type="text" placeholder="Country" />
+              <input name="email" class="half-width" type="email" placeholder="youremail@email.com" />
+              <input name="country" class="tqtr-width" type="text" placeholder="Country" />
               
               <h6 class="contact-header">Keyboard Info</h6>
               <div class="half-width-container">
                 <div>
-                  <input class="half-width" type="text" placeholder="Case" />
-                  <input class="tqtr-width" type="text" placeholder="PCB" />
+                  <input name="case" class="half-width" type="text" placeholder="Case" />
+                  <input name="pcb" class="tqtr-width" type="text" placeholder="PCB" />
                 </div>
                 
                 <div>
-                  <input class="half-width" type="text" placeholder="Plate" />
-                  <input class="tqtr-width" type="text" placeholder="Stabilizers" />
+                  <input name="plate" class="half-width" type="text" placeholder="Plate" />
+                  <input name="stabs" class="tqtr-width" type="text" placeholder="Stabilizers" />
                 </div>
                 
                 <div>
-                  <input class="half-width" type="text" placeholder="Switches" />
-                  <input class="tqtr-width" type="text" placeholder="Lube Preference?" />
+                  <input name="switches" class="half-width" type="text" placeholder="Switches" />
+                  <input name="lube" class="tqtr-width" type="text" placeholder="Lube Preference?" />
                 </div>
               </div>
         
               <h6 class="contact-header">Notes</h6>
               <input type="textarea" placeholder="Any additional notes for me?" />
-              <a href="#" class="submit">SUBMIT</a>
+              <a href="#" class="submit" id="submit-form">SUBMIT</a>
             </form>
           </section>
     </div>
@@ -109,5 +109,7 @@
             </div>
           </footer>
     </div>
+    <script src="./app/js/script.js">  
+    </script>  
 </body>
 </html>

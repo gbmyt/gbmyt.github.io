@@ -3,20 +3,21 @@
   <head>
     <title>DSA Bae</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap"
+    rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap"
+    rel="stylesheet"
     />
     <link href="./app/scss/styles.css" rel="stylesheet" />
+    <link rel="import" href="../../../webcomponents/slideshow.html">
   </head>
 
   <body>
-    <section class="header-section">
-      <header class="header pall flex flex-jc-sb flex-ai-c">
+    <section class="header">
+      <header class="header flex flex-jc-sb flex-ai-c">
         <a class="header__text left-align flex-child" href="https://carnaluna.github.io/" >Dsa Bae</a>
         <a class="flex-child" href="https://carnaluna.github.io/">
           <img
@@ -28,7 +29,7 @@
         <nav class="header__nav flex-child">
           <div class="nav__links">
             <!-- Move these to the footer and replace with "Home", etc -->
-            <a class="nav__item" href="#about">About</a>
+            <a class="nav__item" href="/">Home</a>
             <a class="nav__item" href="#keyboards">Keyboards</a> 
             <a class="nav__item" href="./contact.html">Contact</a>
 
@@ -37,130 +38,166 @@
         </nav>
       </header>
     </section>
-
+    
     <div class="content">
-      <!-- <section class="welcome-section">
-        <h3 class="intro">
-          Freelance data management specialist and front-end dev hobbyist. 
-          <br/> I build interactive dashboards, and collect mechanical keyboards.
-        </h3>
-      </section> -->
-  
-      <section class="content-section">
-        <div class="content-section__item">
-          <h2 class="pall" id="about">~ A little about me ~</h2>
-          <div class="container">
-            <p>Raised in Florida, but was originally born in Poland -- Polish was actually my first language.</p>
-            <p>During the day I work in Supply Chain, but I moonlight as a programming hobbyist, mechanical keyboard enthusiast, and sometimes painter/sewer.</p>
-            <p>When I get bored of all that (rare) I spend time self-teaching Japanese, reading fantasy novels, playing Fallout 4, or trying my hand at artisan keycap and key set design. I hope to invest in and experiment with materials in order to open my own shop sometime this coming year!</p>
+      <section>
+        <h3 class="intro"></h3>
+      </section>
+      
+      <section class="content">
+        <div class="content__about content__item flex">
+          <div class="content__card">
+            <h2 class="pall" id="about">~ A little about me ~</h2>
+            <div class="container">
+              <p>Born in Poland, raised in Florida -- Polish was actually my first language.</p>
+              <p>During the day I work in Supply Chain, but I moonlight as a programming hobbyist, mechanical keyboard enthusiast, and sometimes painter/sewer.</p>
+              <p>When I find myself with spare time on my hands (rare) I enjoy self-teaching Japanese, reading fantasy novels, playing Fallout 4, or trying my hand at artisan keycap and key set design. I hope to invest in and experiment with materials in order to open my own shop sometime this coming year!</p>
+            </div>
+            
+            <div class="content__social">
+              <span class="content__social">Catch me on social media to stay up-to-date on keyboard builds, which I'll be streaming on 
+                <a href="https://www.twitch.tv/dsabae" target="_blank" class="content__social__link"><strong>Twitch</strong>.</a>
+              </span>
+
+              <span class="content__social bold">Instagram: 
+                <a href="https://www.instagram.com/dsa.bae/" class="content__social__link" target="_blank">@dsa.bae</a>
+              </span>
+
+              <span class="content__social bold">Twitter: 
+                <a href="https://twitter.com/dsa_bae" class="content__social__link" target="_blank">@dsa_bae</a>
+              </span>
+
+              <span class="content__social bold">Twitch: 
+                <a href="https://www.twitch.tv/dsabae" class="content__social__link" target="_blank">@dsabae</a>
+              </span>
+            </div>
           </div>
-        
-        <div class="content-section__social pall">
-          <p>Catch me on social media to stay up-to-date on keyboard builds, which I'll be streaming on 
-            <a href="https://www.twitch.tv/dsabae" target="_blank" class="content-section__social__link"><strong>Twitch</strong>.</a>
-          </p>
-          <p class="bold">Instagram: 
-            <a href="https://www.instagram.com/dsa.bae/" class="content-section__social__link" target="_blank">@dsa.bae</a>
-          </p>
-          <p class="bold">Twitter: 
-            <a href="https://twitter.com/dsa_bae" class="content-section__social__link" target="_blank">@dsa_bae</a>
-          </p>
-          <p class="bold">Twitch: 
-            <a href="https://www.twitch.tv/dsabae" class="content-section__social__link" target="_blank">@dsabae</a>
-          </p>
-        </div>
-        </div>
-  
-        <div class="content-section__item">
-          <h2 id="keyboards">~ Keyboards ~</h2>
-          <div class="container left-align">
-            <p>
-              - <span class="bold">Daily Driver: </span> Ergodox EZ
-            </p>
-            <p>
-              - RGB Hot Swap Gamakay K61
-            </p>
-            <p>
-              - AKKO 8034 // Japan World Tour
-            </p>
+
+          <div class="slideshow-container">
+            <div class="slideshow-imgs">
+              <div class="slides fade">
+                  <img src=".\images\kb1.jpg" class="slide-img">
+              </div>
+              <div class="slides fade">
+                  <img src=".\images\kb2.jpg" class="slide-img">
+              </div>
+              <div class="slides fade">
+                  <img src=".\images\kb3.jpg" class="slide-img">
+              </div>
+              <div class="slides fade">
+                  <img src=".\images\kb4.jpg" class="slide-img">
+              </div>
+              
+              <a class="prev" onclick="plusSlides(1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(-1)">&#10095;</a>
+            </div>
             <br>
+            
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="kb content__card content__item flex flex-jc-sb">
+          <div class="kb__flex-child">
+            <h2 id="keyboards">~ Keyboards ~</h2>
+            <div class="kb__container">
+              <p>
+                - <span class="bold">Daily Driver: </span> Ergodox EZ
+              </p>
+              <p>
+                - RGB Hot Swap Gamakay K61
+              </p>
+              <p>
+                - AKKO 8034 // Japan World Tour
+              </p>
+              <br>
+            </div>
           </div>
   
-          <h3 class="pall">~ Upcoming Builds ~</h3>
-  
-          <div class="container">
-            <h3 class="kb-builds">          
-              ✦ Mercutio 40% Through-Hole (Mechwild)
-            </h3>
-            <p>FR4 Sandwhich Board with OLED display and rotary encoder</p>
-            <p>Black case and PCB</p>
+          <div class="kb__flex-child">
+            <h2 class="pall">~ Upcoming Builds ~</h2>
+    
+            <div class="kb__container">
+              <p><span class="kb__builds">✦ Mercutio 40% Through-Hole (Mechwild): </span>FR4 Sandwhich Board with OLED display and rotary encoder // Black case and PCB</p>
+            </div>
+    
+            <div class="kb__container">
+              <p><span class="kb__builds">✦ Microdox 30% (Boardsource): </span>Red FR4 Case and PCB with cute backplate art // Gateron Ink Red v2s // Krytox 205g0 on stem & housings // 0.15mm TX Films</p>
+            </div>
+    
+            <div class="kb__container">
+              <p><span class="kb__builds">&#10003 Rhymestone 40-Key Split Ortho (Boardsource): </span>Clear Acrylic Case, White FR4 PCB</p>
+            </div>
+    
+            <div class="kb__container">
+                <p><span class="kb__builds">✦ SMKeyboards Alice: </span>Sandwich board, stacked acrylic case // Top half Wisteria, bottom half Non-Glare Clear // White Sneakbox PCB // USB-C Bottom-Oriented</p>
+                <p>C3Equalz x JWK Banana Splits // Krytox 205g0 on stem & housings // 0.15mm Pink TX Films</p>
+            </div>
           </div>
-  
-          <div class="container">
-            <h3 class="kb-builds"> 
-              ✦ Microdox 30% (Boardsource)
-            </h3>
-            <p>Red FR4 Case and PCB with cute backplate art</p>
-            <p>Gateron Ink Red v2s // Krytox 205g0 on stem & housings // 0.15mm TX Films</p>
-          </div>
-  
-          <div class="container">
-            <h3 class="kb-builds">          
-              &#10003 Rhymestone 40-Key Split Ortho (Boardsource)
-            </h3>
-            <p>Clear Acrylic Case, White FR4 PCB</p>
-          </div>
-  
-          <div class="container">
-            <h3 class="kb-builds">          
-              ✦ SMKeyboards Alice 
-            </h3>
-              <p>Sandwich board, stacked acrylic case.</p>
-              <p>Top half Wisteria, bottom half Non-Glare Clear</p>
-              <p>White Sneakbox PCB // USB-C Bottom-Oriented</p>
-              <p>C3Equalz x JWK Banana Splits // Krytox 205g0 on stem & housings // 0.15mm Pink TX Films</p>
-          </div>
-  
         </div>
       </section>
     </div>
 
     <footer class="footer">
-      <div class="social">
+      <div class="social flex flex-ai-c">
         <a
           class="social__icon"
           href="https://twitter.com/dsa_bae"
           target="_blank"
-          ><img src="/links/img/SVGs/Twitter.svg" alt="Twitter"
-        /></a>
+          ><svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            width="1.55rem"
+            height="1.55rem"
+            fill="#ca97ed"
+            viewBox="0 0 82 82">
+            <path class="cls-1" d="M41,82A41,41,0,1,1,82,41,41,41,0,0,1,41,82ZM41,2A39,39,0,1,0,80,41,39,39,0,0,0,41,2Z"/>
+            <path class="cls-1" d="M59,31.78a14.8,14.8,0,0,1-4.24,1.16A7.38,7.38,0,0,0,58,28.86a14.73,14.73,0,0,1-4.69,1.79A7.39,7.39,0,0,0,40.54,35.7a7.28,7.28,0,0,0,.19,1.68A21,21,0,0,1,25.5,29.67a7.4,7.4,0,0,0,2.29,9.86,7.4,7.4,0,0,1-3.35-.92v.09a7.39,7.39,0,0,0,5.93,7.24,7.2,7.2,0,0,1-1.95.26A7.31,7.31,0,0,1,27,46.07a7.38,7.38,0,0,0,6.9,5.13A14.94,14.94,0,0,1,23,54.26a20.92,20.92,0,0,0,11.32,3.32c13.59,0,21-11.25,21-21,0-.32,0-.64,0-1A15,15,0,0,0,59,31.78"/></g></g></svg>
+        </a>
+
         <a
         class="social__icon"
         href="https://www.instagram.com/dsa.bae/"
         target="_blank"
-        ><img src="/links/img/SVGs/Instagram.svg" alt="Instagram"
-        /></a>
+        ><svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        width="1.55rem"
+        height="1.55rem"
+        fill="#ca97ed"
+        viewBox="0 0 82 82">
+          <path class="cls-1" d="M41,82A41,41,0,1,1,82,41,41,41,0,0,1,41,82ZM41,2A39,39,0,1,0,80,41,39,39,0,0,0,41,2Z"/>
+          <path class="cls-1" d="M52,23H30a7,7,0,0,0-7,7V52a7,7,0,0,0,7,7H52a7,7,0,0,0,7-7V30A7,7,0,0,0,52,23Zm2,4.15h.79v6.1l-6.08,0,0-6.1ZM35.87,37.31A6.32,6.32,0,1,1,34.67,41,6.33,6.33,0,0,1,35.87,37.31ZM55.5,52A3.45,3.45,0,0,1,52,55.48H30A3.45,3.45,0,0,1,26.51,52V37.31h5.37a9.84,9.84,0,1,0,18.24,0H55.5Z"/></g></g></svg>
+        </a>
+
         <a
         class="social__icon"
         href="https://github.com/carnaluna"
         target="_blank"
         ><svg
         xmlns="http://www.w3.org/2000/svg"
-        width="23"
-        height="23"
-        fill="#FFFFFF"
+        width="1.4rem"
+        height="1.4rem"
+        fill="#ca97ed"
         viewBox="0 0 24 24"
         >
         <path
         d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
         /></svg
         ></a>
+
         <a
         class="social__icon"
         id="twitch"
         href="https://www.twitch.tv/dsabae"
         target="_blank"
-        ><svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="23px" height="23px"><path d="M 5.3125 1 L 5.0625 1.65625 L 2.0625 9.65625 L 2 9.8125 L 2 43 L 13 43 L 13 49 L 20.40625 49 L 20.71875 48.71875 L 26.4375 43 L 35.40625 43 L 35.71875 42.71875 L 48 30.4375 L 48 1 Z M 6.6875 3 L 46 3 L 46 29.59375 L 34.59375 41 L 25.59375 41 L 19.59375 47 L 15 47 L 15 41 L 4 41 L 4 10.1875 Z M 10 5 L 10 35 L 18 35 L 18 42.40625 L 19.71875 40.71875 L 25.4375 35 L 37.40625 35 L 37.71875 34.71875 L 43.71875 28.71875 L 44 28.40625 L 44 5 Z M 12 7 L 42 7 L 42 27.5625 L 36.5625 33 L 24.59375 33 L 24.28125 33.28125 L 20 37.5625 L 20 33 L 12 33 Z M 20 13 L 20 27 L 26 27 L 26 13 Z M 30 13 L 30 27 L 36 27 L 36 13 Z M 22 15 L 24 15 L 24 25 L 22 25 Z M 32 15 L 34 15 L 34 25 L 32 25 Z"/></svg></a>
+        ><svg fill="#ca97ed" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="1.35rem" height="1.35rem"><path d="M 5.3125 1 L 5.0625 1.65625 L 2.0625 9.65625 L 2 9.8125 L 2 43 L 13 43 L 13 49 L 20.40625 49 L 20.71875 48.71875 L 26.4375 43 L 35.40625 43 L 35.71875 42.71875 L 48 30.4375 L 48 1 Z M 6.6875 3 L 46 3 L 46 29.59375 L 34.59375 41 L 25.59375 41 L 19.59375 47 L 15 47 L 15 41 L 4 41 L 4 10.1875 Z M 10 5 L 10 35 L 18 35 L 18 42.40625 L 19.71875 40.71875 L 25.4375 35 L 37.40625 35 L 37.71875 34.71875 L 43.71875 28.71875 L 44 28.40625 L 44 5 Z M 12 7 L 42 7 L 42 27.5625 L 36.5625 33 L 24.59375 33 L 24.28125 33.28125 L 20 37.5625 L 20 33 L 12 33 Z M 20 13 L 20 27 L 26 27 L 26 13 Z M 30 13 L 30 27 L 36 27 L 36 13 Z M 22 15 L 24 15 L 24 25 L 22 25 Z M 32 15 L 34 15 L 34 25 L 32 25 Z"/></svg></a>
       </div>
     </footer>
+
+    <script src="/app/js/script.js"></script>
   </body>
 </html>

@@ -1,11 +1,17 @@
-.content-section {
+.content {
+
+  &__about {
+    margin: 6rem auto auto auto;
+    max-width: 85%;;
+  }
+
   &__item {
-    margin: 0 auto;
-    width: 80%;
-    // min-height: 34rem;
-    padding: 2rem 5.75rem;
-    margin-top: 5rem;
-    margin-bottom: 3.5rem;
+    margin: 5rem auto 6.5rem auto;
+  }
+  
+  &__card {
+    width: 85%;
+    padding: 2rem 3rem;
     box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55),
       10px 10px 15px rgba(70, 70, 70, 0.12);
     border-radius: 0.75rem;
@@ -13,10 +19,13 @@
   }
 
   &__social {
-    margin: 1.75rem 1rem;
+    span.content__social {
+      display: block;
+      padding: 0.8rem 1rem;
+    }  
 
     &__link {
-      color: $lightPink;
+      color: $dbDkPurple;
       transition: font-size 150ms ease-in-out;
       
       &:hover {
@@ -24,10 +33,23 @@
       }
     }
   }
+
+}
+
+.kb {
+
+  &__flex-child {
+    width: 50%;
+    margin: 0 0.5rem;
+  }
   
-  .kb-builds {
+  &__builds {
+    font-weight: bold;
+  }
+  
+  &__container {
     text-align: left;
-    font-style: italic;
   }
 }
+
 

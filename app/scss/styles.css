@@ -1,9 +1,11 @@
 html, body {
   height: 100%;
+  margin: 0 auto;
+  padding: 0;
 }
 
 html {
-  font-size: 1.05rem;
+  font-size: 1.35rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -24,8 +26,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #ececec;
-  margin: 0;
-  padding: 0;
   text-align: center;
   font-family: "Open Sans";
 }
@@ -47,19 +47,15 @@ h3 {
   color: #606060;
 }
 
-h3 {
-  font-size: 1.1rem;
-}
-
 hr {
-  width: 48rem;
+  width: 100%;
   margin: 2rem;
 }
 
 p {
   color: #606060;
   line-height: 1.5;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 a,
@@ -67,6 +63,13 @@ a:visited,
 a:hover {
   font-weight: normal;
   text-decoration: none;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .border {
@@ -125,11 +128,12 @@ a:hover {
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #36454f;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  top: 0;
   height: 5rem;
+  background-color: #e4e4e4;
 }
 
 .header__text {
@@ -139,10 +143,10 @@ a:hover {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-left: 0;
+  margin-left: 2rem;
   font-weight: 400;
   font-size: 2rem;
-  color: #ffffff;
+  color: #36454f;
   font-family: "UnifrakturMaguntia", cursive;
   letter-spacing: 0.25rem;
   -webkit-transition: font-size 150ms ease-in-out;
@@ -184,10 +188,11 @@ a:hover {
       -ms-flex: 1;
           flex: 1;
   font-size: 1.08rem;
+  margin-right: 1.25rem;
 }
 
 .header__nav a {
-  color: #ffffff;
+  color: #36454f;
   -webkit-transition: font-size 175ms ease-in-out;
   transition: font-size 175ms ease-in-out;
 }
@@ -197,14 +202,13 @@ a:hover {
 }
 
 .header__nav a:hover {
-  color: lightpink;
-  border-bottom: lightpink;
+  color: #ca97ed;
+  border-bottom: #ca97ed;
   font-size: 1.15rem;
 }
 
 h3.intro {
-  padding: 4rem;
-  width: 50rem;
+  padding: 2.5rem;
   margin: 0 auto;
 }
 
@@ -241,10 +245,6 @@ body {
   font-weight: 600;
   font-size: 0.875rem;
   letter-spacing: 0.075rem;
-}
-
-.flex-child {
-  margin: 3rem;
 }
 
 form {
@@ -413,35 +413,160 @@ input[type="radio"]:checked:after {
       flex-shrink: 0;
 }
 
-.content-section__item {
-  margin: 0 auto;
-  width: 80%;
-  padding: 2rem 5.75rem;
-  margin-top: 5rem;
-  margin-bottom: 3.5rem;
+.content__about {
+  margin: 6rem auto auto auto;
+  max-width: 85%;
+}
+
+.content__item {
+  margin: 5rem auto 6.5rem auto;
+}
+
+.content__card {
+  width: 85%;
+  padding: 2rem 3rem;
   -webkit-box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55), 10px 10px 15px rgba(70, 70, 70, 0.12);
           box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55), 10px 10px 15px rgba(70, 70, 70, 0.12);
   border-radius: 0.75rem;
   overflow: hidden;
 }
 
-.content-section__social {
-  margin: 1.75rem 1rem;
+.content__social span.content__social {
+  display: block;
+  padding: 0.8rem 1rem;
 }
 
-.content-section__social__link {
-  color: lightpink;
+.content__social__link {
+  color: #ca97ed;
   -webkit-transition: font-size 150ms ease-in-out;
   transition: font-size 150ms ease-in-out;
 }
 
-.content-section__social__link:hover {
+.content__social__link:hover {
   font-size: 1.055rem;
 }
 
-.content-section .kb-builds {
+.kb__flex-child {
+  width: 50%;
+  margin: 0 0.5rem;
+}
+
+.kb__builds {
+  font-weight: bold;
+}
+
+.kb__container {
   text-align: left;
-  font-style: italic;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2.25rem 0 0 4rem;
+  z-index: 1;
+}
+
+.slideshow-imgs {
+  max-width: 60rem;
+  position: relative;
+}
+
+/* Hide the images by default */
+.slides {
+  display: none;
+}
+
+.slide-img {
+  border-radius: 6%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -1.375rem;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1.125rem;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 0.1875rem 0.1875rem 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.prev {
+  left: 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 0.1875rem 0 0 0.1875rem;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dots, .slide-img {
+  width: 100%;
+  margin: 0 0 0.15rem 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 0.75rem;
+  width: 0.75rem;
+  margin: 0.2rem;
+  background-color: #BBB;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .footer {
@@ -454,18 +579,15 @@ input[type="radio"]:checked:after {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  background-color: #36454f;
+  bottom: 0;
+  width: 100%;
+  min-height: 3rem;
+  background-color: #e4e4e4;
   color: white;
 }
 
 .social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-top: .5rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding-left: 1.2rem;
 }
 
@@ -473,7 +595,7 @@ input[type="radio"]:checked:after {
   width: 1.55rem;
 }
 
-img,
+.footer-img,
 svg {
   margin-right: 0.95rem;
   -webkit-transition: -webkit-transform 250ms ease-in-out;
@@ -482,7 +604,7 @@ svg {
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
 }
 
-img:hover,
+.footer-img:hover,
 svg:hover {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
