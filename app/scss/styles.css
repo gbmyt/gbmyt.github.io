@@ -132,7 +132,7 @@ a:hover {
   z-index: 2;
   width: 100%;
   top: 0;
-  height: 5rem;
+  height: 6rem;
   background-color: #e4e4e4;
 }
 
@@ -143,14 +143,14 @@ a:hover {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-left: 2rem;
-  font-weight: 400;
+  margin: 0.17rem 0 0 2rem;
+  font-weight: bold;
   font-size: 2rem;
   color: #36454f;
   font-family: "UnifrakturMaguntia", cursive;
   letter-spacing: 0.25rem;
-  -webkit-transition: font-size 150ms ease-in-out;
-  transition: font-size 150ms ease-in-out;
+  -webkit-transition: font-size 300ms ease-in-out;
+  transition: font-size 300ms ease-in-out;
 }
 
 .header__text:hover {
@@ -165,19 +165,18 @@ a:hover {
 
 .header__img {
   padding: 0.95rem 0.75rem 0.75rem 0.75rem;
-  max-width: 5.15rem;
-  max-height: 5.15rem;
+  width: 5.75rem;
   border-radius: 6.25rem;
-  -webkit-transition: -webkit-transform 200ms ease-in-out;
-  transition: -webkit-transform 200ms ease-in-out;
-  transition: transform 200ms ease-in-out;
-  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
   cursor: pointer;
 }
 
 .header__img:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .header__nav {
@@ -202,13 +201,13 @@ a:hover {
 }
 
 .header__nav a:hover {
-  color: #ca97ed;
-  border-bottom: #ca97ed;
+  color: #bb80e2;
+  border-bottom: #bb80e2;
   font-size: 1.15rem;
 }
 
 h3.intro {
-  padding: 2.5rem;
+  padding: 1.8rem;
   margin: 0 auto;
 }
 
@@ -415,7 +414,11 @@ input[type="radio"]:checked:after {
 
 .content__about {
   margin: 6rem auto auto auto;
-  max-width: 85%;
+}
+
+.content__about, .content__card {
+  max-width: 87%;
+  max-height: 37rem;
 }
 
 .content__item {
@@ -423,8 +426,7 @@ input[type="radio"]:checked:after {
 }
 
 .content__card {
-  width: 85%;
-  padding: 2rem 3rem;
+  padding: 1rem 3rem 2rem 3rem;
   -webkit-box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55), 10px 10px 15px rgba(70, 70, 70, 0.12);
           box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55), 10px 10px 15px rgba(70, 70, 70, 0.12);
   border-radius: 0.75rem;
@@ -437,7 +439,7 @@ input[type="radio"]:checked:after {
 }
 
 .content__social__link {
-  color: #ca97ed;
+  color: #bb80e2;
   -webkit-transition: font-size 150ms ease-in-out;
   transition: font-size 150ms ease-in-out;
 }
@@ -598,10 +600,10 @@ input[type="radio"]:checked:after {
 .footer-img,
 svg {
   margin-right: 0.95rem;
-  -webkit-transition: -webkit-transform 250ms ease-in-out;
-  transition: -webkit-transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
 }
 
 .footer-img:hover,

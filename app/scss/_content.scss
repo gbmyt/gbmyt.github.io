@@ -2,16 +2,19 @@
 
   &__about {
     margin: 6rem auto auto auto;
-    max-width: 85%;;
   }
-
+  
+  &__about, &__card {
+    max-width: 87%;;
+    max-height: 37rem;
+  }
+  
   &__item {
     margin: 5rem auto 6.5rem auto;
   }
   
   &__card {
-    width: 85%;
-    padding: 2rem 3rem;
+    padding: 1rem 3rem 2rem 3rem;
     box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55),
       10px 10px 15px rgba(70, 70, 70, 0.12);
     border-radius: 0.75rem;
