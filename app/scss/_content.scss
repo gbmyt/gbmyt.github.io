@@ -4,17 +4,10 @@
 
   &__grid {
     display: grid;
-    // auto-fit decides how many columns to use for you
-    //    (number of items on each row may look uneven)
-    // minmax controls width / columns per row for you
-    // grid-template-columns: repeat(auto-fit, minmax(14.375rem, 1fr));
-
-    // 1fr stands for 1 fractional unit
     grid-template-columns: 1fr;
     gap: 1.875rem;
 
     @include breakpoint-up(medium) {
-      // keyboard shortcut is gtc for this
       grid-template-columns: repeat(2, 1fr);
     }
   }
@@ -78,7 +71,7 @@
   padding-bottom: 2rem;
 
   &__flex-child {
-    width: 50%;
+    width: 80%;
     margin: 0 2.5rem;
   }
   
