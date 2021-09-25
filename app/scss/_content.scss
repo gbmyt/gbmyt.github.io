@@ -19,13 +19,16 @@
     }
   }
 
-  &__about, &__card {
+  &__about, &__card, &__item{
     flex-direction: column;
-    width: 87%;;
 
     @include breakpoint-up(large) {
       flex-direction: row;
     }
+  }
+
+  &__about, &__card {
+    width: 87%;;
   }
   
   &__item {
@@ -73,15 +76,10 @@
   min-height: 35rem;
   align-items: center;
   padding-bottom: 2rem;
-  flex-direction: column;
-
-  @include breakpoint-up(large) {
-    flex-direction: row;
-  }
 
   &__flex-child {
     width: 50%;
-    margin: 0 0.5rem;
+    margin: 0 2.5rem;
   }
   
   &__builds {

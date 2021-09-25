@@ -1,113 +1,127 @@
-// html, body {
-//     height: 100%;
-// }
-
-// body {
-//     display: flex;
-//     flex-direction: column;
-// }
-
-// .content {
-//     flex: 1 0 auto;
-// }
-
-.form-content {
-    background-color: $charcoal;
-    min-height: 70rem;
-}
-
-.contactform {
-    flex: 1 0 auto;
-    color: $grey;
+.contact {
+    display: flex;
+    flex-direction: column;
     font-family: $poppins;
-    font-weight: 600;
-    font-size: 1rem;
-    letter-spacing: 0.075rem;
-}
+    
+    &__build-description {
+        text-align: left;
+        margin: 7rem 0 3rem 0.75rem;
 
-form {
-    top: 57%;
-    left: 50%;
-    width: 100%;
-    position: absolute;
-    border-radius: 0.625rem;
-    background-color: transparent;
+        @include breakpoint-up(large) {
+            margin: 8rem 0 3.75rem 2.5rem;
+        }
 
-    transform: translate(-50%, -50%);
-    padding: 3rem;
-}
+        &__heading, &__heading-two, &__text {
+            font-weight: normal;
+            font-size: 0.9rem;
+            font-style: italic;
+            padding: 0 1rem;
 
-h3 {
-    margin-bottom: 1.75rem;
-}
+            @include breakpoint-up(large) {
+                font-size: 1.1rem;
+                font-style: italic;
+            }
+        }
 
-h6.contact-header {
-    margin: 3.5rem auto 1rem auto;
-    font: inherit;
-    text-transform: uppercase;
-}
+        &__heading-two {
+            padding-top: 1rem;
+            font-weight: bold;
+        }
+    }
+    
+    &__form-container {
+        // flex: 1 0 auto;
+        color: $grey;
+        font-weight: 600;
+        font-size: 0.75rem;
+        letter-spacing: 0.075rem;
+        background-color: $charcoal;
+    }
+    
+    &__form {
+        // top: 100%;
+        // left: 50%;
+        // width: 100%;
+        // height: 100%;
+        margin: 0 auto;
+        padding: 3rem;
+        background-color: transparent;
 
-.contact-header#contact-info {
-    margin-top: 2.625rem;
-}
+        &__title {
+            font-size: 1.5rem;
+            
+            @include breakpoint-up(medium) {
+                font-size: 2.5rem;
+            }
 
-a.submit,
-a.home {
-    display: block;
-    margin-left: 10%;
-    text-align: center;
-    font: inherit;
-    color: inherit;
-    text-decoration: none;
-    padding: 0.675rem;
-    box-shadow: -5px -5px 9px rgba(89, 89, 89, 0.35),
-    9px 9px 15px rgba(38, 38, 38, 0.7);
-}
-
-a.home {
-    position: absolute;
-    right: 0;
-    width: 4rem;
-    height: 4rem;
-    font-size: 0.7rem;
-    border-radius: 1.875rem;
-    margin-bottom: 2rem;
-    padding-top: 1.38rem;
-    padding-left: 0.8rem;
-}
-
-a.submit {
-    border-radius: 0.85rem;
-    width: 80%;
-    color: $lightishGrey;
-    margin-top: 1.3rem;
-    margin-bottom: 1.75rem;
-    background-image: linear-gradient(to right, $reallyDkPurple, $dbDkPurple);
+            background: -webkit-linear-gradient(left, $reallyDkPurple, $white);
+            background: -o-linear-gradient(right, $reallyDkPurple, $white);
+            background: -moz-linear-gradient(right, $reallyDkPurple, $white);
+            background: linear-gradient(to right, $reallyDkPurple, $white); 
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        &__header {
+            margin: 3rem auto 2rem auto;
+            text-transform: uppercase;
+        }
+    }
+    
+    &__submit {
+        display: block;
+        margin: 1.3rem auto 1.75rem 10%;
+        padding: 0.675rem;
+        text-align: center;
+        font: inherit;
+        width: 80%;
+        color: $lightishGrey;
+        border-radius: 0.85rem;
+        text-decoration: none;
+    
+        box-shadow: -5px -5px 9px rgba(89, 89, 89, 0.35),
+        9px 9px 15px rgba(38, 38, 38, 0.7);
+        background-image: linear-gradient(to right, $reallyDkPurple, $dbDkPurple);
+    }
 }
 
 input[type="text"],
 input[type="textarea"],
 input[type="email"] {
-    margin-bottom: 1.5625rem;
+    margin-bottom: 0.75rem;
     border: none;
     color: $lightGrey;
     background-color: transparent;
-    box-shadow: inset -4px -4px 9px rgba(97, 97, 97, 0.35),
-    8px 8px 12px rgba(53, 53, 53, 0.7);
+    box-shadow: -4px -4px 8px rgba(28, 28, 28, 0.35),
+    8px 8px 8px rgba(53, 53, 53, 0.7);
     padding: .75rem 0.625rem;
     width: 90%;
     border-radius: 0.4375rem;
     outline: none;
+
+    @include breakpoint-up(large) {
+        margin-bottom: 1.5625rem;
+    }
 }
 
-input.half-width {
-    width: 37%;
-    margin-right: 2rem;
+input[type="text"]:focus,
+input[type="textarea"]:focus,
+input[type="email"]:focus {
+    box-shadow: inset -4px -4px 8px rgba(28, 28, 28, 0.35),
+    inset 8px 8px 8px rgba(53, 53, 53, 0.7);
 }
 
-input.tqtr-width {
-    width: 44%;
+@include breakpoint-up(large) {
+    input.half-width {
+        width: 37%;
+        margin-right: 2rem;
+    }
+    
+    input.tqtr-width {
+        width: 44%;
+    }
 }
+
 
 input[type="textarea"] {
     height: 10rem;
@@ -121,49 +135,7 @@ input[type="textarea"] {
     letter-spacing: 0.08125rem;
 }
 
-input[type="radio"] {
--webkit-appearance: none;
--moz-appearance: none;
-    appearance: none;
-    position: relative;
-    height: 2.5rem;
-    width: 7.5rem;
-    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55),
-        10px 10px 15px rgba(70, 70, 70, 0.12);
-    border: 5px solid $lightGrey;
-    border-radius: 1.875rem;
-    font: inherit;
-    outline: none;
-    cursor: pointer;
-}
-
-input[type="radio"]:after {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    color: $midGrey;
-    letter-spacing: 0.03125rem;
-}
-
-#phone:after {
-    content: "Phone";
-}
-
-#email:after {
-    content: "Email";
-}
-
-input[type="radio"]:checked,
 a.submit:active {
     box-shadow: inset -10px -10px 15px rgba(89, 89, 89, 0.35),
         inset 10px 10px 15px rgba(53, 53, 53, 0.7);
-}
-
-input[type="radio"]:checked:after {
-    color: $deepPink;
-}
-
-.footer {
-    flex-shrink: 0;
 }

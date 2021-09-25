@@ -9,8 +9,7 @@
 </head>
 
 <body>
-  <div class="form-container">
-    <section class="header pall"></section>
+    <section class="header">
       <header class="header flex flex-jc-sb flex-ai-c">
         <a class="header__text left-align flex-child" href="https://carnaluna.github.io/" >Dsa Bae</a>
         <a class="flex-child" href="https://carnaluna.github.io/">
@@ -23,54 +22,57 @@
         <nav class="header__nav flex-child">
           <div class="nav__links">
             <a class="nav__item" href="/">Home</a>
-            <a class="nav__item" href="#keyboards">Keyboards</a> 
+            <a class="nav__item" href="./#keyboards">Keyboards</a> 
             <a class="nav__item" href="./contact.html">Contact</a>
-    
-            <!-- <a class="nav__item" href="./DB_links/links.html">Links</a -->
           </div>
         </nav>
       </header>
     </section>
-
-    
   
-      <div class="content form-content">
-          <section class="contactform">
-            <form method="post" action="">
-              <h2 class="form-title">Keyboard Build Service</h2>
-              <h6 class="contact-header">Full Name</h6>
-              <input name="first_name" class="half-width" type="text" placeholder="First name" />
-              <input name="last_name" class="tqtr-width" type="text" placeholder="Last name" />
-        
-              <h6 class="contact-header" id="contact-info">Contact Info</h6>
-              <input name="email" class="half-width" type="email" placeholder="youremail@email.com" />
-              <input name="country" class="tqtr-width" type="text" placeholder="Country" />
-              
-              <h6 class="contact-header">Keyboard Info</h6>
-              <div class="half-width-container">
-                <div>
-                  <input name="case" class="half-width" type="text" placeholder="Case" required>
-                  <input name="pcb" class="tqtr-width" type="text" placeholder="PCB" />
-                </div>
-                
-                <div>
-                  <input name="plate" class="half-width" type="text" placeholder="Plate" />
-                  <input name="stabs" class="tqtr-width" type="text" placeholder="Stabilizers" />
-                </div>
-                
-                <div>
-                  <input name="switches" class="half-width" type="text" placeholder="Switches" />
-                  <input name="lube" class="tqtr-width" type="text" placeholder="Lube Preference?" />
-                </div>
+    <div class="contact content">
+        <section class="contact__build-description">
+          <h1 class="contact__build-description__heading">Welcome! Request custom keyboard builds here by filling out the attached form. </h1>
+          <h2 class="contact__build-description__heading-two">How does this work?</h2>
+          <p class="contact__build-description__text">You'll mail all required parts to me (PCB, case, plate, switches, and stabs), and I'll build your board for you! Your custom board can be built on-stream or off, depending on your preference. 
+          <p class="contact__build-description__text"><span class="bold">Please note: </span>Parts will be returned in the same packaging they were received in, lead times are not guaranteed. Shoot me a message to discuss more!</p>
+        </section>
+
+        <section class="contact__form-container">
+          <form class="contact__form" method="post" action="">
+            <h2 class="contact__form__title">Keyboard Build Service</h2>
+            <h3 class="contact__form__header">Full Name</h3>
+            <input name="first_name" class="half-width" type="text" placeholder="First name" />
+            <input name="last_name" class="tqtr-width" type="text" placeholder="Last name" />
+      
+            <h3 class="contact__form__header" id="contact-info">Contact Info</h3>
+            <input name="email" class="half-width" type="email" placeholder="youremail@email.com" />
+            <input name="country" class="tqtr-width" type="text" placeholder="Country" />
+            
+            <h3 class="contact__form__header">Keyboard Info</h3>
+            <div class="half-width-container">
+              <div>
+                <input name="case" class="half-width" type="text" placeholder="Case" required>
+                <input name="pcb" class="tqtr-width" type="text" placeholder="PCB" />
               </div>
-        
-              <h6 class="contact-header">Notes</h6>
-              <input name="message" type="textarea" placeholder="Any additional notes for me?" />
-              <a href="#" class="submit" id="submit-form">SUBMIT</a>
-            </form>
-          </section>
-      </div>
+              
+              <div>
+                <input name="plate" class="half-width" type="text" placeholder="Plate" />
+                <input name="stabs" class="tqtr-width" type="text" placeholder="Stabilizers" />
+              </div>
+              
+              <div>
+                <input name="switches" class="half-width" type="text" placeholder="Switches" />
+                <input name="lube" class="tqtr-width" type="text" placeholder="Lube Preference?" />
+              </div>
+            </div>
+      
+            <h3 class="contact__form__header">Notes</h3>
+            <input name="message" type="textarea" placeholder="Any additional notes for me?" />
+            <a href="#" class="contact__submit" id="submit-form">SUBMIT</a>
+          </form>
+        </section>
     </div>
+
     <footer class="footer">
       <div class="social flex flex-ai-c">
         <a

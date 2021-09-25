@@ -7,11 +7,7 @@
   flex-wrap: wrap;
   margin: 5rem auto 0 auto;
   z-index: 1;
-  
-  
-  @include breakpoint-up(medium) {
-    max-width: 43rem;
-  }
+  max-width: 87%;
   
   @include breakpoint-up(large) {
     margin: 0.7rem 0 0 4rem;
@@ -28,7 +24,7 @@
 }
 
 .slide-img {
-    border-radius: 6%;
+  border-radius: 6%;
 }
 
 /* Next & previous buttons */
