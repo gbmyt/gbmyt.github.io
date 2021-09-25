@@ -5,12 +5,20 @@
 /* Slideshow container */
 .slideshow-container {
   flex-wrap: wrap;
-  margin: 0.7rem 0 0 4rem;
+  margin: 5rem auto 0 auto;
   z-index: 1;
+  
+  
+  @include breakpoint-up(medium) {
+    max-width: 43rem;
+  }
+  
+  @include breakpoint-up(large) {
+    margin: 0.7rem 0 0 4rem;
+  }
 }
 
 .slideshow-imgs {
-  width: 33rem;
   position: relative;
 }
 

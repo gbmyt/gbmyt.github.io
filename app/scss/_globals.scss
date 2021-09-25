@@ -13,7 +13,7 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
-  }
+}
   
 body {
   display: flex;
@@ -22,10 +22,13 @@ body {
   text-align: center;
   font-family: "Open Sans";
 }
-
 .container {
   max-width: 68rem;
   margin: 0 auto;
+}
+
+.grid-container {
+
 }
 
 .content {
@@ -35,8 +38,14 @@ body {
 h1,
 h2,
 h3 {
-  color: $midGrey;
+  color: $grey;
 }
+
+// .heading {
+//   background-color: black;
+//   border: 1px solid red;
+// }
+
 
 hr {
   width: 100%;
@@ -44,7 +53,7 @@ hr {
 }
 
 p {
-  color: $midGrey;
+  color: $grey;
   line-height: 1.5;
   padding: 0.5rem 1rem;
 }

@@ -7,7 +7,7 @@
   bottom: 0;
   width: 100%;
   min-height: 3rem;
-  background-color: $lightishGrey;
+  background-color: $slate;
   color: white;
 }
 
@@ -22,7 +22,7 @@
 
 .footer-img,
 svg { 
-  margin-right: 0.95rem;
+  margin-right: 0.35rem;
   transition: transform 300ms ease-in-out;
 
   &:hover {

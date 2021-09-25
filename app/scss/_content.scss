@@ -1,22 +1,41 @@
 .content {
+  background-color: $slate;
+  color: $grey;
 
-  &__about {
-    margin: 6rem auto auto auto;
+  &__grid {
+    display: grid;
+    // auto-fit decides how many columns to use for you
+    //    (number of items on each row may look uneven)
+    // minmax controls width / columns per row for you
+    // grid-template-columns: repeat(auto-fit, minmax(14.375rem, 1fr));
+
+    // 1fr stands for 1 fractional unit
+    grid-template-columns: 1fr;
+    gap: 1.875rem;
+
+    @include breakpoint-up(medium) {
+      // keyboard shortcut is gtc for this
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
-  
+
   &__about, &__card {
+    flex-direction: column;
     width: 87%;;
-    height: 36rem;
+
+    @include breakpoint-up(large) {
+      flex-direction: row;
+    }
   }
   
   &__item {
-    margin: 5rem auto 6.5rem auto;
+    margin: 6rem auto 0 auto;
   }
   
   &__card {
     padding: 1rem 2rem 2rem 2rem;
-    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55),
-      10px 10px 15px rgba(70, 70, 70, 0.12);
+    box-shadow: -7px -7px 11px rgba(89, 89, 89, 0.35),
+      12px 12px 18px rgba(53, 53, 53, 0.7);
     border-radius: 0.75rem;
     overflow: hidden;
   }
@@ -34,7 +53,6 @@
     }  
     
     &__icon {
-      //border: 1px solid $dbDkPurple;
       padding: 0.25rem;
     }
 
@@ -51,6 +69,15 @@
 }
 
 .kb {
+  background-color: $charcoal;
+  min-height: 35rem;
+  align-items: center;
+  padding-bottom: 2rem;
+  flex-direction: column;
+
+  @include breakpoint-up(large) {
+    flex-direction: row;
+  }
 
   &__flex-child {
     width: 50%;

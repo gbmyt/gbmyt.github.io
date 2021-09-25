@@ -3,8 +3,8 @@
   z-index: 2;
   width: 100%;
   top: 0;
-  height: 6rem;
-  background-color: $lightishGrey;
+  height: 5rem;
+  background-color: $slate;
 
   &__text {
     order: 1;
@@ -12,13 +12,14 @@
     margin: 0.17rem 0 0 2rem;
     font-weight: bold;
     font-size: 2rem;
-    color: $blueCharcoal;
+    color: $grey;
     font-family: $old-english;
     letter-spacing: 0.25rem;
     transition: font-size 300ms ease-in-out;
       
       &:hover {
         font-size: 2.1rem;
+        color: $dbDkPurple;
       }
   }
 
@@ -28,7 +29,7 @@
 
   &__img {
     padding: 0.95rem 0.75rem 0.75rem 0.75rem;
-    width: 5.75rem;
+    width: 5rem;
     border-radius: 6.25rem;
     transition: transform 300ms ease-in-out;
     cursor: pointer;
@@ -45,7 +46,7 @@
     margin-right: 1.25rem;
 
     a {
-      color: $blueCharcoal;
+      color: $lightGrey;
       transition: font-size 175ms ease-in-out;
 
       &:not(:last-child) {
