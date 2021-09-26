@@ -14,7 +14,7 @@
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap"
     rel="stylesheet"
     />
-    <link href="../app/scss/styles.css" rel="stylesheet" />
+    <link href="app/scss/styles.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -24,7 +24,7 @@
         <a class="flex-child" href="https://carnaluna.github.io/">
           <img
             class="header__img"
-            src="../images/profile_photo.png"
+            src="images/profile_photo.png"
             alt="profile-image"/>
         </a>
     
@@ -32,7 +32,7 @@
           <div class="nav__links">
             <a class="nav__item" href="/">Home</a>
             <a class="nav__item" href="../#keyboards">Keyboards</a> 
-            <a class="nav__item" href="contact.html">Contact</a>
+            <a class="nav__item" href="src/contact.html">Contact</a>
           </div>
         </nav>
       </header>
@@ -54,8 +54,8 @@
             <input name="last_name" class="tqtr-width" type="text" placeholder="Last name" />
       
             <h3 class="contact__form__header" id="contact-info">Contact Info</h3>
-            <input name="email" class="half-width" type="email" placeholder="youremail@email.com" />
-            <input name="country" class="tqtr-width" type="text" placeholder="Country" />
+            <input name="email" class="half-width" type="email" placeholder="Your Email Address" />
+            <input name="conf_email" class="tqtr-width" type="email" placeholder="Confirm Your Email Address" />
             
             <h3 class="contact__form__header">Keyboard Info</h3>
             <div class="half-width-container">
@@ -77,7 +77,7 @@
       
             <h3 class="contact__form__header">Notes</h3>
             <input name="message" type="textarea" placeholder="Any additional notes for me?" />
-            <a href="#" class="contact__submit" id="submit-form">SUBMIT</a>
+            <button class="contact__submit" name="submit" id="submit-form">SUBMIT</button>
           </form>
         </section>
     </div>

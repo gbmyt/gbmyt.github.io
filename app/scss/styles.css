@@ -401,7 +401,6 @@ h3.intro {
   width: 80%;
   color: #e4e4e4;
   border-radius: 0.85rem;
-  text-decoration: none;
   -webkit-box-shadow: -5px -5px 9px rgba(89, 89, 89, 0.35), 9px 9px 15px rgba(38, 38, 38, 0.7);
           box-shadow: -5px -5px 9px rgba(89, 89, 89, 0.35), 9px 9px 15px rgba(38, 38, 38, 0.7);
   background-image: -webkit-gradient(linear, left top, right top, from(#66318a), to(#bb80e2));
@@ -433,7 +432,8 @@ input[type="email"] {
 
 input[type="text"]:focus,
 input[type="textarea"]:focus,
-input[type="email"]:focus {
+input[type="email"]:focus,
+button#submit-form:active {
   -webkit-box-shadow: inset -4px -4px 8px rgba(28, 28, 28, 0.35), inset 8px 8px 8px rgba(53, 53, 53, 0.7);
           box-shadow: inset -4px -4px 8px rgba(28, 28, 28, 0.35), inset 8px 8px 8px rgba(53, 53, 53, 0.7);
 }
@@ -479,11 +479,6 @@ input[type="textarea"] {
   font-weight: 500;
   color: #ababab;
   letter-spacing: 0.08125rem;
-}
-
-a.submit:active {
-  -webkit-box-shadow: inset -10px -10px 15px rgba(89, 89, 89, 0.35), inset 10px 10px 15px rgba(53, 53, 53, 0.7);
-          box-shadow: inset -10px -10px 15px rgba(89, 89, 89, 0.35), inset 10px 10px 15px rgba(53, 53, 53, 0.7);
 }
 
 * {

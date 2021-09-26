@@ -54,8 +54,8 @@
             <input name="last_name" class="tqtr-width" type="text" placeholder="Last name" />
       
             <h3 class="contact__form__header" id="contact-info">Contact Info</h3>
-            <input name="email" class="half-width" type="email" placeholder="youremail@email.com" />
-            <input name="country" class="tqtr-width" type="text" placeholder="Country" />
+            <input required name="email" class="half-width" type="email" placeholder="Your Email Address" />
+            <input required name="conf_email" class="tqtr-width" type="email" placeholder="Confirm Your Email Address" />
             
             <h3 class="contact__form__header">Keyboard Info</h3>
             <div class="half-width-container">
@@ -70,14 +70,14 @@
               </div>
               
               <div>
-                <input name="switches" class="half-width" type="text" placeholder="Switches" />
+                <input required name="switches" class="half-width" type="text" placeholder="Switches" />
                 <input name="lube" class="tqtr-width" type="text" placeholder="Lube Preference?" />
               </div>
             </div>
       
             <h3 class="contact__form__header">Notes</h3>
             <input name="message" type="textarea" placeholder="Any additional notes for me?" />
-            <button class="contact__submit" id="submit-form">SUBMIT</button>
+            <button class="contact__submit" name="submit" id="submit-form">SUBMIT</button>
           </form>
         </section>
     </div>
