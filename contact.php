@@ -60,7 +60,7 @@
             <h3 class="contact__form__header">Keyboard Info</h3>
             <div class="half-width-container">
               <div>
-                <input name="case" class="half-width" type="text" placeholder="Case" required>
+                <input name="case" class="half-width" type="text" placeholder="Case" />
                 <input name="pcb" class="tqtr-width" type="text" placeholder="PCB" />
               </div>
               
