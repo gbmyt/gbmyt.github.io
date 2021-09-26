@@ -5,7 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Build Service</title>
-    <link href="/app/scss/styles.css" rel="stylesheet" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap"
+    rel="stylesheet"
+    />
+    <link href="../app/scss/styles.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -15,15 +24,15 @@
         <a class="flex-child" href="https://carnaluna.github.io/">
           <img
             class="header__img"
-            src="./images/profile_photo.png"
+            src="../images/profile_photo.png"
             alt="profile-image"/>
         </a>
     
         <nav class="header__nav flex-child">
           <div class="nav__links">
             <a class="nav__item" href="/">Home</a>
-            <a class="nav__item" href="./#keyboards">Keyboards</a> 
-            <a class="nav__item" href="./contact.html">Contact</a>
+            <a class="nav__item" href="../#keyboards">Keyboards</a> 
+            <a class="nav__item" href="contact.html">Contact</a>
           </div>
         </nav>
       </header>
@@ -38,7 +47,7 @@
         </section>
 
         <section class="contact__form-container">
-          <form class="contact__form" method="post" action="">
+          <form class="contact__form" method="post" action="contactform.php">
             <h2 class="contact__form__title">Keyboard Build Service</h2>
             <h3 class="contact__form__header">Full Name</h3>
             <input name="first_name" class="half-width" type="text" placeholder="First name" />
