@@ -14,6 +14,7 @@ if (isset($_POST['submit'])) {
     $mailpattern = "/^[a-zA-Z0-9-_.]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]{2,}$/";
     $validation_error;
     
+    // Needs additional validation
     if (preg_match($mailpattern, $mailFrom)) {
         if ($mailFrom === $confMail) {
             mail($mailTo, $subject, $txt, $headers);
@@ -21,8 +22,7 @@ if (isset($_POST['submit'])) {
         } else {
             header("Location: errors/conf-error.php"); 
         }
-    } else {
-        // $validation_error = "Hint: Double check your e-mail address."; 
+    } else { 
         header("Location: errors/mail-error.php"); 
     }
 }
