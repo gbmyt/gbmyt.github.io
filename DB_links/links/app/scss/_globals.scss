@@ -131,10 +131,10 @@ a.featured,
 
 .channels {
   display: flex;
-  justify-content: center;
-  max-width: 30rem;
+  justify-content: space-between;
+  max-width: 25rem;
   margin: 0 auto;
-  padding: 0.35rem 3rem 2rem 3rem;
+  padding: 0.35rem 0.25rem 2rem 0.25rem;
   
   &__link {
     flex: 1;
