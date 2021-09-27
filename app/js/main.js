@@ -31,23 +31,3 @@ if (document.getElementById('title')) {
     dots[slideIndex-1].className += " active";
     }
 }
-
-
-
-
-// Figure out how to get this to record form data to google sheet
-
-// var $form = $('form#contact-form'),
-//     url = 'https://script.google.com/macros/s/AKfycbzY9i-OPb2n1WkxnyGLe6O0PcKduiwjYMLg6FOkeTd3dvwfYVRVvNPSqJHdTDHyFZKr/exec'
-
-// $('#submit-form').on('click', function(e) {
-//   e.preventDefault();
-//   var jqxhr = $.ajax({
-//     url: url,
-//     method: "GET",
-//     dataType: "json",
-//     data: $form.serializeObject()
-//   }).success(
-//     // do something
-//   );
-// })

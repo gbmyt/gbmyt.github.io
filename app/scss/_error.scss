@@ -1,0 +1,30 @@
+.error {
+  display: block;
+  text-align: left;
+  margin: 0 auto;
+  padding: 3rem 0 0 3rem;
+  
+  &__btn {
+    width: 8rem
+  }
+
+  &__txt {
+    padding: 0;
+  }
+} 
+
+input[type="email"].is-invalid {
+  border: 2px solid red;
+}
+
+input[type="email"].is-invalid,
+.error {
+  color: red;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.error {
+  width: 80%;
+  padding: 0;
+}

@@ -30,9 +30,9 @@
     
         <nav class="header__nav flex-child">
           <div class="nav__links">
-            <a class="nav__item" href="/">Home</a>
-            <a class="nav__item" href="../#keyboards">Keyboards</a> 
-            <a class="nav__item" href="src/contact.html">Contact</a>
+            <a class="nav__item" href="./">Home</a>
+            <a class="nav__item" href="./#keyboards">Keyboards</a> 
+            <a class="nav__item" href="contact.html">Contact</a>
           </div>
         </nav>
       </header>
