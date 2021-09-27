@@ -163,8 +163,8 @@ a.featured,
   text-decoration: none;
   border: 1.25px solid white;
   border-radius: 3rem;
-  color: #fafafa;
-  background-color: rgba(204, 135, 145, 0.75);
+  color: silver;
+  background-color: rgba(221, 221, 221, 0.5);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
