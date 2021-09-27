@@ -47,7 +47,7 @@
         </section>
 
         <section class="contact__form-container">
-          <form novalidate="novalidate" class="contact__form" method="post" action="contactform.php">
+          <form class="contact__form" method="post" action="contactform.php">
             <h2 class="contact__form__title">Keyboard Build Service</h2>
             <h3 class="contact__form__header">Full Name</h3>
             <input name="first_name" id="first_name" class="half-width" type="text" placeholder="First name" />
@@ -62,8 +62,8 @@
             <h3 class="contact__form__header">Keyboard Info</h3>
             <div class="half-width-container">
               <div>
-                <input name="case" class="half-width" type="text" placeholder="Case" />
-                <input name="pcb" class="tqtr-width" type="text" placeholder="PCB" />
+                <input required name="case" class="half-width" type="text" placeholder="Case" />
+                <input required name="pcb" class="tqtr-width" type="text" placeholder="PCB" />
               </div>
               
               <div>
@@ -72,7 +72,7 @@
               </div>
               
               <div>
-                <input name="switches" class="half-width" type="text" placeholder="Switches" />
+                <input required name="switches" class="half-width" type="text" placeholder="Switches" />
                 <input name="lube" class="tqtr-width" type="text" placeholder="Lube Preference?" />
               </div>
             </div>
