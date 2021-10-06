@@ -1,39 +1,10 @@
 .content {
+  //flex: 1 0 auto;
   background-color: $slate;
   color: $grey;
 
-  &__grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.875rem;
-
-    @include breakpoint-up(medium) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  &__about, &__card, &__item{
-    flex-direction: column;
-
-    @include breakpoint-up(large) {
-      flex-direction: row;
-    }
-  }
-
-  &__about, &__card {
+  &__about {
     width: 87%;;
-  }
-  
-  &__item {
-    margin: 6rem auto 0 auto;
-  }
-  
-  &__card {
-    padding: 1rem 2rem 2rem 2rem;
-    box-shadow: -7px -7px 11px rgba(89, 89, 89, 0.35),
-      12px 12px 18px rgba(53, 53, 53, 0.7);
-    border-radius: 0.75rem;
-    overflow: hidden;
   }
 
   &__social-icons {
@@ -64,13 +35,22 @@
 
 }
 
+article, .content__about {
+  margin: 6rem auto 0 auto;
+  flex-direction: column;
+
+    @include breakpoint-up(large) {
+      flex-direction: row;
+    }
+}
+
 .kb {
   background-color: $charcoal;
   min-height: 35rem;
   align-items: center;
   padding-bottom: 2rem;
 
-  &__flex-child {
+  &__child {
     width: 80%;
     margin: 0 2.5rem;
   }

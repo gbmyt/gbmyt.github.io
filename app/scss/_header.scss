@@ -1,39 +1,36 @@
 .header { 
-  border-bottom: 1px solid $charcoal2;
   position: fixed;
-  z-index: 2;
   width: 100%;
   top: 0;
+  z-index: 2;
   height: 5rem;
+  text-align: left;
   background-color: $slate;
+  border-bottom: 1px solid $charcoal2;
 
   &__text {
-    order: 1;
     flex: 1;
     margin: 0.17rem 0 0 2rem;
-    font-weight: bold;
-    font-size: 2rem;
-    color: $grey;
-    font-family: $old-english;
+
     letter-spacing: 0.25rem;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: $old-english;
+    color: $grey;
     transition: font-size 300ms ease-in-out;
       
-      &:hover {
-        font-size: 2.1rem;
-        color: $dbDkPurple;
-      }
-  }
-
-  a {
-    order: 2;
+    &:hover {
+      font-size: 2.1rem;
+      color: $dbDkPurple;
+    }
   }
 
   &__img {
     padding: 0.95rem 0.75rem 0.75rem 0.75rem;
-    width: 5rem;
     border-radius: 6.25rem;
-    transition: transform 300ms ease-in-out;
+    width: 5rem;
     cursor: pointer;
+    transition: transform 300ms ease-in-out;
 
     &:hover {
       transform: scale(1.1);
@@ -41,12 +38,11 @@
   }
 
   &__nav {
-    order: 3;
     flex: 1;
     font-size: 1.08rem;
     margin-right: 1.25rem;
 
-    a {
+    &__link {
       color: $lightGrey;
       transition: font-size 175ms ease-in-out;
 
@@ -64,10 +60,8 @@
 }
 
 h3.intro {
+  border: 1px solid red;
   padding: 1.8rem;
   margin: 0 auto;
-}
-
-.flex-child {
-  max-width: 18rem;
+  height: 12rem;
 }
